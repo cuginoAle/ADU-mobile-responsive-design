@@ -14,12 +14,16 @@
             .appendTo(topBar);
 
         //setting the navigation-treeview click event handler
-        navigationTree.find("button").click(toggleTOC);
+        navigationTree
+            .find("button").click(toggleTOC);
 
+        // $(".main-content").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",function(e){
+        //     $(this).
+        // })
 
 
         fixNavHeight();
-        // due to a known browser bug, resize event can be fired more than once
+        // due to a known browser bug, resize event can fire more than once
         var resizeHnd=null;
         $(window).on("resize",function(){
             // fixing the navigation height on window resise

@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"navig",
+				"navigationTree"
+			],
+			[
+				"main",
+				"main-content"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"fix",
+				"fixNavHeight"
+			],
+			[
+				"res",
+				"resizeHnd"
+			],
+			[
+				"nav",
+				"navTreeClone"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"te",
+				"text-indent"
+			],
+			[
+				"init",
+				"initialTime"
+			],
+			[
+				"ini",
+				"initialScrollY"
+			],
+			[
 				"border",
 				"border-bottom"
 			],
@@ -92,16 +132,8 @@
 				"page-break-before"
 			],
 			[
-				"margin",
-				"margin-top"
-			],
-			[
 				"li",
 				"line-height"
-			],
-			[
-				"te",
-				"text-top"
 			],
 			[
 				"marg",
@@ -291,38 +323,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 53865,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/adisinsight.css",
-			"settings":
-			{
-				"buffer_size": 166581,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/stickyNavigation.js",
-			"settings":
-			{
-				"buffer_size": 4767,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/jquery.hotSpot.js",
-			"settings":
-			{
-				"buffer_size": 8289,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -456,6 +456,11 @@
 	},
 	"file_history":
 	[
+		"/Users/alessiocarnevale/casper/Jump to section prototype (v.0.2)/assets/jquery.hotSpotOld.js",
+		"/Users/alessiocarnevale/casper/Jump to section prototype (v.0.2)/assets/hammer.js",
+		"/Users/alessiocarnevale/casper/Jump to section prototype (v.0.2)/assets/requestAnimationFrame.js",
+		"/Users/alessiocarnevale/casper/Jump to section prototype (v.0.2)/assets/tocca.js",
+		"/Users/alessiocarnevale/casper/Jump to section prototype (v.0.2)/assets/jquery.sticky.js",
 		"/Users/alessiocarnevale/casper/Jump to section prototype copy/assets/jquery.hotSpotNew.js",
 		"/Users/alessiocarnevale/casper/Jump to section prototype copy/assets/stickyPolyfill.js",
 		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/assets/js/imageFlipper.js",
@@ -610,6 +615,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"gone",
+			"enter",
+			"main-content",
+			"transition",
+			"navTreeClone",
+			"navigationTree",
+			"padding",
+			"topba",
+			"transition",
+			"transform",
+			"show()",
+			"fixNavHeight",
+			"jump-to-section__section-list",
+			"toggleTOC",
+			"animate",
+			"topbar",
+			"top",
+			"topbar",
+			"stickyElement",
 			";(function ( $, window, document, undefined ) {\n\n    // Create the defaults once\n    var pluginName = \"hotSpot\",\n        defaults = {\n            enter:$.noop,\n            enteringTop:$.noop,\n            enteringBottom:$.noop,\n            contained:$.noop,\n            leaving:$.noop,\n            leavingTop:$.noop,\n            leavingBottom:$.noop,\n            gone:$.noop,\n            debugMode:false,        //if true shows a red line for visual feedback\n            top:0,                  //todo: make this customisable in therms of screen height %\n            thickness:1             //line thickness\n        };\n\n    // The actual plugin constructor\n    function Plugin( element, options ) {\n        this.element = element;\n\n        this.options = $.extend( {}, defaults, options) ;\n\n        this._defaults = defaults;\n        this._name = pluginName;\n        this.lastFiredEvent=null;\n        this.previousTop=$(window).scrollTop();\n\n        this.init();\n    }\n\n    Plugin.prototype = {\n\n        init: function() {\n            var that=this;          \n\n            $(window).scroll(function(){\n                that.hotSpotCheck(that.element);\n            });\n\n            // running the function on windows load\n            $(window).load(\n                function(){\n                    that.hotSpotCheck(that.element);\n                }\n            )\n            \n        },\n\n\n        hotSpotCheck: function(element){\n            var scroll_top = $(window).scrollTop() // our current vertical position from the top\n\n            var $this=$(element),\n                that    = this,\n                elTop   = $this.offset().top,\n                elBottom= elTop+$this.outerHeight(false),\n                hsTop   = this.options.top + scroll_top,\n                hsBottom= hsTop + this.options.thickness,\n                isAbove = elBottom<hsTop,\n                isScrollingUp=(this.previousTop<scroll_top);  //understangin the scroll direction\n\n                if(elTop>hsTop && elBottom<hsBottom){\n                    //the element is entirely underneath the HSL\n                    if(this.statusIsNot([\"contained\"])){\n                        this.options.contained.call($this);\n                        this.log(\"contained\");\n                        this.setStatus(\"contained\");\n                    }\n\n                }else{\n\n\n                    if((elTop>hsBottom || elBottom<hsTop) && this.statusIs([\"leavingTop\",\"leavingBottom\",\"gone\" + !isAbove,null])){\n                        //the element is not underneath the hotSpot line\n                        this.options.gone.call($this,isAbove);\n                        this.log(\"gone\");\n                        this.setStatus(\"gone\"+isAbove);\n\n                    }else{\n\n                        if(isScrollingUp){\n                            if(elTop<hsBottom && elBottom>hsBottom && this.statusIsNot([\"leavingTop\",\"contained\",\"enteringBottom\",\"enteringTop\"])){\n                                // the element just went under the HSL\n                                this.options.enter.call($this);\n                                this.log(\"enter\");\n                                this.options.enteringBottom.call($this);\n                                this.log(\"enteringBottom\");\n                                this.setStatus(\"enteringBottom\");\n                            }\n\n                            if(elBottom<=hsBottom && this.statusIsNot([\"leavingTop\",\"gonetrue\",\"gonefalse\"])){\n                                // the element is sliding out from the top side\n                                this.options.leaving.call($this);\n                                this.log(\"leaving\");\n                                this.options.leavingTop.call($this);\n                                this.log(\"leavingTop\");\n                                this.setStatus(\"leavingTop\")\n                            }\n\n                            if(elBottom<hsTop && this.statusIsNot([\"gonetrue\",\"gonefalse\",\"enteringBottom\"])){\n                                // the element just went out from the top side\n                                this.options.gone.call($this,isAbove);\n                                this.log(\"gone!!!\");\n                                this.setStatus(\"gone\"+isAbove)\n                            }\n\n\n                        }else{\n                            if(elBottom>hsTop && elTop<hsBottom && this.statusIsNot([\"leavingBottom\",\"contained\",\"enteringTop\",\"enteringBottom\"])){\n                                // the element just went under the HSL\n                                this.options.enter.call($this);\n                                this.log(\"enter\");\n                                this.options.enteringTop.call($this);\n                                this.log(\"enteringTop\");\n                                this.setStatus(\"enteringTop\");\n                            }\n\n                            if(elTop>hsTop && (this.statusIsNot([\"leavingBottom\",\"gonetrue\",\"gonefalse\"]))){\n                                // the element is sliding out from the bottom side\n                                this.options.leaving.call($this);\n                                this.log(\"leaving\");\n                                this.options.leavingBottom.call($this);\n                                this.log(\"leavingBottom\");\n                                this.setStatus(\"leavingBottom\");\n                            }\n\n                            if(elTop>hsBottom && this.statusIsNot([\"gonetrue\",\"gonefalse\"])){\n                                // the element just went out from the bottom side\n                                this.options.gone.call($this,isAbove);\n                                this.log(\"gone\");\n                                this.setStatus(\"gone\"+isAbove)\n                            }\n                        }\n                    \n                    }\n\n                }\n\n\n            this.previousTop=scroll_top;\n        },\n\n        log:function(msg){\n            if(this.options.debugMode){\n                console.log(msg)\n            }\n        },\n\n        setStatus:function(status){\n            this.lastFiredEvent=status;\n        },\n\n        getStatus:function(){\n            return this.lastFiredEvent;\n        },\n\n        statusIsNot:function(modeArray){\n            for(var mode in modeArray){\n                if(this.lastFiredEvent==modeArray[mode]){\n                    return false;\n                }\n            }\n            return true;\n        },\n\n        statusIs:function(modeArray){\n            for(var mode in modeArray){\n                if(this.lastFiredEvent==modeArray[mode]){\n                    return true;\n                }\n            }\n            return false;\n        }    \n\n    };\n\n    // A really lightweight plugin wrapper around the constructor,\n    // preventing against multiple instantiations\n    $.fn[pluginName] = function ( options ) {\n\n        return this.each(function () {\n\n            var _plugin=$.data(this, \"plugin_\" + pluginName);\n\n            if (!_plugin) {\n\n                var tmpOptions = $.extend( {}, defaults, options);\n                //showing the red line for visual feedback\n                var HSL=$(\"<div/>\")\n                    .css({\n                        display:tmpOptions.debugMode?\"block\":\"none\",\n                        position:\"fixed\",\n                        left:\"0px\",\n                        width:\"100%\",\n                        height:(tmpOptions.thickness||1) + \"px\",\n                        top:tmpOptions.top,\n                        \"background-color\":\"rgba(255,0,0,0.6)\",\n                        \"z-index\":99999\n                    })\n\n                options.HSL=HSL.appendTo(document.body);                                \n                $.data(this, \"plugin_\" + pluginName, new Plugin( this, options ));\n            }else{\n                var tmpOptions = $.extend( {}, _plugin.options, options);\n                \n                _plugin.options.HSL.css({\n                    display:tmpOptions.debugMode?\"block\":\"none\",\n                    height:(tmpOptions.thickness||1) + \"px\",\n                    top:tmpOptions.top,                    \n                })\n                _plugin.options=$.extend({},_plugin.options,options);\n            }\n        });\n    };\n\n})( jQuery, window, document );",
 			"entering",
 			"isSticky",
@@ -718,26 +742,7 @@
 			"=\"img_",
 			"=\"IMG_",
 			"=\"img_",
-			"=\"IMG_",
-			"=\"img_",
-			"=\"IMG_",
-			"=\"img_",
-			"=\"IMG_",
-			"Img=\"img",
-			"-mobileImg",
-			"\" data-deskt",
-			"data-desktopImg=\"",
-			"img_6465",
-			"<noscript data-desktopImg=\"_desktop\" data-retinaImg=\"_x2\" data-alttext=\"your alt text\" class=\"responsivize\">",
-			"Prefix",
-			"data-desktopPrefix=\"_desktop\" data-retinaPrefix=\"_x2\"",
-			"=\"desktop\"",
-			"data-large",
-			"src=\"",
-			"$body",
-			"imageRatio",
-			"setImageRatio",
-			"parallaxPanelRatio"
+			"=\"IMG_"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -759,477 +764,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 53865,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 11389.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "assets/adisinsight.css",
-					"settings":
-					{
-						"buffer_size": 166581,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/stickyNavigation.js",
-					"settings":
-					{
-						"buffer_size": 4767,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1270,
-								1270
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 200.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "assets/jquery.hotSpot.js",
-					"settings":
-					{
-						"buffer_size": 8289,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7175,
-								7175
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2539.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
