@@ -1,0 +1,1394 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"docume",
+				"document__title"
+			],
+			[
+				"doc",
+				"document__title"
+			],
+			[
+				"get",
+				"getStatus"
+			],
+			[
+				"is",
+				"isAbove"
+			],
+			[
+				"enter",
+				"enteringBottom"
+			],
+			[
+				"el",
+				"elBottom"
+			],
+			[
+				"hs",
+				"hsTop"
+			],
+			[
+				"leav",
+				"leavingBottom"
+			],
+			[
+				"st",
+				"statusIs"
+			],
+			[
+				"entering",
+				"enteringBottom"
+			],
+			[
+				"mode",
+				"modeArray"
+			],
+			[
+				"mo",
+				"modeArray"
+			],
+			[
+				"leaving",
+				"leavingTop"
+			],
+			[
+				"le",
+				"leavingTop"
+			],
+			[
+				"sti",
+				"stickyHeader"
+			],
+			[
+				"document",
+				"documentSection"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"QR",
+				"QRdiv"
+			],
+			[
+				"page",
+				"page-break-before"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"te",
+				"text-top"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"no",
+				"noParallax"
+			],
+			[
+				"inner",
+				"innerWidth"
+			],
+			[
+				"cach",
+				"cacheObj"
+			],
+			[
+				"img",
+				"imgUrl"
+			],
+			[
+				"platfo",
+				"platformPrefix"
+			],
+			[
+				"respo",
+				"responsiveImages"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"body",
+				"bodywWidth"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"box-s",
+				"box-sizing:   (property)"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"ease",
+				"ease-out"
+			],
+			[
+				"paddi",
+				"padding:   (property)"
+			],
+			[
+				"this",
+				"thisPos"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"parallax",
+				"parallaxCacheObj"
+			],
+			[
+				"parall",
+				"parallaxCacheObj"
+			],
+			[
+				"para",
+				"parallaxCacheObj"
+			],
+			[
+				"panel",
+				"panelHeight"
+			],
+			[
+				"parF",
+				"parFxPos"
+			],
+			[
+				"sco",
+				"scrollTop  (function)"
+			],
+			[
+				"max",
+				"max-width:   (property)"
+			],
+			[
+				"pa",
+				"parFxPos"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"toggle",
+				"toggleClass  (function)"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"link",
+				"link	link - stylesheet"
+			],
+			[
+				"anno",
+				"annotator-viewer"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"overfl",
+				"overflow-y:   (property)"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"over",
+				"overflow-y:   (property)"
+			],
+			[
+				"bg",
+				"background-color"
+			],
+			[
+				"read",
+				"reader__chapter-wrapper"
+			],
+			[
+				"reader",
+				"reader--show-toolbox"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"cli",
+				"clickHandler"
+			],
+			[
+				"chap",
+				"chapter__content__wrapper"
+			],
+			[
+				"ch",
+				"chapter__content__wrapper"
+			],
+			[
+				"tool",
+				"toolbox__chapter-list"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 53865,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/adisinsight.css",
+			"settings":
+			{
+				"buffer_size": 166581,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/stickyNavigation.js",
+			"settings":
+			{
+				"buffer_size": 4767,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/jquery.hotSpot.js",
+			"settings":
+			{
+				"buffer_size": 8289,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"map",
+				"View: Toggle Minimap"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"html",
+				"Snippet: DOCTYPE HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sni",
+				"Snippet: html"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"color",
+				"Color Picker: Insert Color"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"colo",
+				"Color Picker: Insert Color"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"packa",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"varia",
+				"List stylesheet variables"
+			],
+			[
+				"vari",
+				"List stylesheet variables"
+			],
+			[
+				"sider",
+				"View: Toggle Side Bar"
+			],
+			[
+				"side",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"split",
+				"Preferences: SplitScreen-Resizer Key Bindings – User"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/alessiocarnevale/casper/Jump to section prototype copy/assets/jquery.hotSpotNew.js",
+		"/Users/alessiocarnevale/casper/Jump to section prototype copy/assets/stickyPolyfill.js",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/assets/js/imageFlipper.js",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/index.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/assets/js/main.js",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_layouts/roles.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/roles/ux-designer/index.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/roles/ui-designer/index.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/roles/software-engineer/index.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/roles/quality-analyst/index.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/roles/project-manager/index.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/roles/platform-engineer/index.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/roles/front-end-developer/index.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/roles/business-analyst/index.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/index.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/sass/page-components/_storyboards.scss",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/assets/js/imageFlipper.js",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/assets/js/responsiveImages.js",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_includes/page-top.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_includes/footer.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_includes/header_roles.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/sass/page-components/_our-culture.scss",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/sass/page-components/_our-people.scss",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/sass/page-components/_image-flipper.scss",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_includes/header.html",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/Gruntfile.js",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/sass/base/_print.scss",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/sass/mixins/_transition.scss",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/sass/base/_layout.scss",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/assets/css/joinit.springer.css",
+		"/Users/alessiocarnevale/casper/springersbm.github.io/_site/assets/js/main.js",
+		"/Users/alessiocarnevale/casper/springer job site/css/reset.css",
+		"/Users/alessiocarnevale/casper/springer job site/css/normalize.css",
+		"/Users/alessiocarnevale/casper/springer job site/css/style.css",
+		"/Users/alessiocarnevale/casper/springer job site/css/style.sass",
+		"/Users/alessiocarnevale/casper/beechwood/app-gems/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/print.css",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/mixins/_pseudo-element.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/beechwood.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/beechwood.css",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/ui_components/_toolbox.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/.tmp/spec/controllers/showToolbox.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/test/spec/controllers/showToolbox.coffee",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/ui_components/_btn.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/.tmp/scripts/directives/glossary.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/directives/glossary.coffee",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/providers/annotatorProvider.coffee",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/ui_components/_annotator.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/mixins/_for-high-res.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/mixins/_respond-to.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/base/_a++.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/views/modal.html",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/lib/annotator/annotator-full-1.2.7.min.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/dist/scripts/lib/annotator/annotator-full-1.2.7.min.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-server/public/app/scripts/lib/annotator/annotator-full-1.2.7.min.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-server/target/scala-2.10/classes/public/app/scripts/lib/annotator/annotator-full-1.2.7.min.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/lib/annotator/annotator-full-1.2.7.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-server/test/scala/com/springer/app/functional/web/StatusPageTests.scala",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/base/_layout.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/annotator_touch2.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/setup/_variables.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/base/_base.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/annotator.touch.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/.tmp/scripts/annotator/HighlightingPlugin.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/annotator/AnnotatorTouch.coffee",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/ui_components/_highlights.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/directives/toolbox.coffee",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-server/app/views/chapter.scala.html",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/annotator.touch.css",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/controllers/showToolbox.coffee",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/.tmp/scripts/directives/toolbox.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/controllers/chapterContentController.coffee",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/ui_components/_search.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/ui_components/_notes-list.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/views/toolbox.html",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/ui_components/_04_chapter-nav.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/ui_components/_03_search.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/ui_components/_02_chapter-list.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/base/_new-a++.scss.BACKUP.9232.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/base/_new-a++.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/base/_new-a++ 12-24-55-194.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/base/_new-a++.scss.REMOTE.9232.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/ui_components/_01_toolbox.scss",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/node_modules/grunt-contrib-jshint/node_modules/jshint/tests/stable/regression/libs/codemirror3.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/controllers/search.coffee",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/directives/chapterContent.coffee",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/lib/angular-modules/ngTap.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/scripts/controllers/chapterList.coffee",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/.tmp/scripts/controllers/chapterList.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/.tmp/scripts/directives/chapterContent.js",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-client/app/styles/base/_browser_overrides.scss",
+		"/Users/alessiocarnevale/casper/beechwood/Gemfile",
+		"/Users/alessiocarnevale/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/alessiocarnevale/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/alessiocarnevale/casper/beechwood/beechwood-server/ops/properties/app.default.properties",
+		"/Users/alessiocarnevale/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/alessiocarnevale/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"/Users/alessiocarnevale/casper/springersbm.github.io",
+			"",
+			"*.scss",
+			"*.css",
+			"*.scss",
+			"",
+			"*.scss",
+			"*.css",
+			"*.scss",
+			"",
+			"*.scss",
+			"*.css",
+			".css",
+			".scss",
+			"",
+			"*css",
+			"*.?css",
+			"*.scss",
+			"",
+			"*.coffee",
+			"*.scss",
+			"*.coffee",
+			"*.coffe",
+			"*.js",
+			".js",
+			"",
+			".scala",
+			"",
+			"*.scss",
+			"",
+			"*.scala",
+			"*.scss",
+			"",
+			"*.scss",
+			"*.js",
+			"*.coffe",
+			"*.scss",
+			"*.coffee",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";(function ( $, window, document, undefined ) {\n\n    // Create the defaults once\n    var pluginName = \"hotSpot\",\n        defaults = {\n            enter:$.noop,\n            enteringTop:$.noop,\n            enteringBottom:$.noop,\n            contained:$.noop,\n            leaving:$.noop,\n            leavingTop:$.noop,\n            leavingBottom:$.noop,\n            gone:$.noop,\n            debugMode:false,        //if true shows a red line for visual feedback\n            top:0,                  //todo: make this customisable in therms of screen height %\n            thickness:1             //line thickness\n        };\n\n    // The actual plugin constructor\n    function Plugin( element, options ) {\n        this.element = element;\n\n        this.options = $.extend( {}, defaults, options) ;\n\n        this._defaults = defaults;\n        this._name = pluginName;\n        this.lastFiredEvent=null;\n        this.previousTop=$(window).scrollTop();\n\n        this.init();\n    }\n\n    Plugin.prototype = {\n\n        init: function() {\n            var that=this;          \n\n            $(window).scroll(function(){\n                that.hotSpotCheck(that.element);\n            });\n\n            // running the function on windows load\n            $(window).load(\n                function(){\n                    that.hotSpotCheck(that.element);\n                }\n            )\n            \n        },\n\n\n        hotSpotCheck: function(element){\n            var scroll_top = $(window).scrollTop() // our current vertical position from the top\n\n            var $this=$(element),\n                that    = this,\n                elTop   = $this.offset().top,\n                elBottom= elTop+$this.outerHeight(false),\n                hsTop   = this.options.top + scroll_top,\n                hsBottom= hsTop + this.options.thickness,\n                isAbove = elBottom<hsTop,\n                isScrollingUp=(this.previousTop<scroll_top);  //understangin the scroll direction\n\n                if(elTop>hsTop && elBottom<hsBottom){\n                    //the element is entirely underneath the HSL\n                    if(this.statusIsNot([\"contained\"])){\n                        this.options.contained.call($this);\n                        this.log(\"contained\");\n                        this.setStatus(\"contained\");\n                    }\n\n                }else{\n\n\n                    if((elTop>hsBottom || elBottom<hsTop) && this.statusIs([\"leavingTop\",\"leavingBottom\",\"gone\" + !isAbove,null])){\n                        //the element is not underneath the hotSpot line\n                        this.options.gone.call($this,isAbove);\n                        this.log(\"gone\");\n                        this.setStatus(\"gone\"+isAbove);\n\n                    }else{\n\n                        if(isScrollingUp){\n                            if(elTop<hsBottom && elBottom>hsBottom && this.statusIsNot([\"leavingTop\",\"contained\",\"enteringBottom\",\"enteringTop\"])){\n                                // the element just went under the HSL\n                                this.options.enter.call($this);\n                                this.log(\"enter\");\n                                this.options.enteringBottom.call($this);\n                                this.log(\"enteringBottom\");\n                                this.setStatus(\"enteringBottom\");\n                            }\n\n                            if(elBottom<=hsBottom && this.statusIsNot([\"leavingTop\",\"gonetrue\",\"gonefalse\"])){\n                                // the element is sliding out from the top side\n                                this.options.leaving.call($this);\n                                this.log(\"leaving\");\n                                this.options.leavingTop.call($this);\n                                this.log(\"leavingTop\");\n                                this.setStatus(\"leavingTop\")\n                            }\n\n                            if(elBottom<hsTop && this.statusIsNot([\"gonetrue\",\"gonefalse\",\"enteringBottom\"])){\n                                // the element just went out from the top side\n                                this.options.gone.call($this,isAbove);\n                                this.log(\"gone!!!\");\n                                this.setStatus(\"gone\"+isAbove)\n                            }\n\n\n                        }else{\n                            if(elBottom>hsTop && elTop<hsBottom && this.statusIsNot([\"leavingBottom\",\"contained\",\"enteringTop\",\"enteringBottom\"])){\n                                // the element just went under the HSL\n                                this.options.enter.call($this);\n                                this.log(\"enter\");\n                                this.options.enteringTop.call($this);\n                                this.log(\"enteringTop\");\n                                this.setStatus(\"enteringTop\");\n                            }\n\n                            if(elTop>hsTop && (this.statusIsNot([\"leavingBottom\",\"gonetrue\",\"gonefalse\"]))){\n                                // the element is sliding out from the bottom side\n                                this.options.leaving.call($this);\n                                this.log(\"leaving\");\n                                this.options.leavingBottom.call($this);\n                                this.log(\"leavingBottom\");\n                                this.setStatus(\"leavingBottom\");\n                            }\n\n                            if(elTop>hsBottom && this.statusIsNot([\"gonetrue\",\"gonefalse\"])){\n                                // the element just went out from the bottom side\n                                this.options.gone.call($this,isAbove);\n                                this.log(\"gone\");\n                                this.setStatus(\"gone\"+isAbove)\n                            }\n                        }\n                    \n                    }\n\n                }\n\n\n            this.previousTop=scroll_top;\n        },\n\n        log:function(msg){\n            if(this.options.debugMode){\n                console.log(msg)\n            }\n        },\n\n        setStatus:function(status){\n            this.lastFiredEvent=status;\n        },\n\n        getStatus:function(){\n            return this.lastFiredEvent;\n        },\n\n        statusIsNot:function(modeArray){\n            for(var mode in modeArray){\n                if(this.lastFiredEvent==modeArray[mode]){\n                    return false;\n                }\n            }\n            return true;\n        },\n\n        statusIs:function(modeArray){\n            for(var mode in modeArray){\n                if(this.lastFiredEvent==modeArray[mode]){\n                    return true;\n                }\n            }\n            return false;\n        }    \n\n    };\n\n    // A really lightweight plugin wrapper around the constructor,\n    // preventing against multiple instantiations\n    $.fn[pluginName] = function ( options ) {\n\n        return this.each(function () {\n\n            var _plugin=$.data(this, \"plugin_\" + pluginName);\n\n            if (!_plugin) {\n\n                var tmpOptions = $.extend( {}, defaults, options);\n                //showing the red line for visual feedback\n                var HSL=$(\"<div/>\")\n                    .css({\n                        display:tmpOptions.debugMode?\"block\":\"none\",\n                        position:\"fixed\",\n                        left:\"0px\",\n                        width:\"100%\",\n                        height:(tmpOptions.thickness||1) + \"px\",\n                        top:tmpOptions.top,\n                        \"background-color\":\"rgba(255,0,0,0.6)\",\n                        \"z-index\":99999\n                    })\n\n                options.HSL=HSL.appendTo(document.body);                                \n                $.data(this, \"plugin_\" + pluginName, new Plugin( this, options ));\n            }else{\n                var tmpOptions = $.extend( {}, _plugin.options, options);\n                \n                _plugin.options.HSL.css({\n                    display:tmpOptions.debugMode?\"block\":\"none\",\n                    height:(tmpOptions.thickness||1) + \"px\",\n                    top:tmpOptions.top,                    \n                })\n                _plugin.options=$.extend({},_plugin.options,options);\n            }\n        });\n    };\n\n})( jQuery, window, document );",
+			"entering",
+			"isSticky",
+			"entered",
+			"\"gone\"",
+			"this.setStatus(\"gone\")",
+			"this.setStatus(\"gone\");",
+			"call($this,elBottom<hsTop",
+			"elBottom<hsTop",
+			"elBottom<hsTop)",
+			"gone.call",
+			"gone",
+			"entered",
+			"\");\n",
+			"hotSpot",
+			"this.previousTop",
+			"console.log",
+			".log",
+			"leave",
+			"enter",
+			"this.options",
+			"border-box",
+			"csspositionsticky",
+			"issticky",
+			"sticky",
+			":sticky",
+			"featureTest",
+			"scroll",
+			"stickySection",
+			"clone",
+			"issticky",
+			"fixedsticky",
+			"scroll",
+			"topBar",
+			"topbar",
+			"introduction",
+			"lastFiredEvent",
+			"firstEventFired",
+			"lastFiredEvent",
+			"isHot",
+			"development sta",
+			"development overview",
+			"development_overview",
+			"navigationSection",
+			"section__head",
+			"navigationSection",
+			".document--drug-profile .section__heading",
+			" title='\"+people[x]+\"'",
+			"\"",
+			"imageFlipper",
+			"logo-print.jpg",
+			"logo-print",
+			"logo-print.jpg",
+			"setBG",
+			"-webkit-filter",
+			"blur",
+			"noParallax",
+			"board__headline",
+			"active",
+			"setBGposition",
+			"noparallax",
+			"setResponsiveImages",
+			"mobile",
+			"noParallax",
+			");",
+			"people.push(",
+			"line-he",
+			"aside",
+			"#0176c3",
+			"font-siz",
+			"our-workplace",
+			"dotte",
+			"font-si",
+			"map",
+			"our-products__product",
+			"display: none;",
+			"!important",
+			"base",
+			"print",
+			"base.min",
+			"blur",
+			"active",
+			";		",
+			"transition",
+			"-webkit-transition",
+			"tablet-portrait",
+			"ismobile",
+			"parallaxPanelRatio",
+			".storyboards__board",
+			"scriptHack",
+			"ismobile",
+			"noParallax",
+			"touch",
+			".data",
+			"\" data-mobileImg",
+			".jpg\" data-mobileImg",
+			"\" data-mobile",
+			"<noscript ",
+			"data-mobileImg=\"",
+			"data-tabletImg=\"ima",
+			"data-desktopImg=",
+			"_x2.jpg\"",
+			"data-retinaImg",
+			"imgObj",
+			"images",
+			"=\"img_",
+			"=\"IMG_",
+			"=\"img_",
+			"=\"IMG_",
+			"=\"img_",
+			"=\"IMG_",
+			"=\"img_",
+			"=\"IMG_",
+			"Img=\"img",
+			"-mobileImg",
+			"\" data-deskt",
+			"data-desktopImg=\"",
+			"img_6465",
+			"<noscript data-desktopImg=\"_desktop\" data-retinaImg=\"_x2\" data-alttext=\"your alt text\" class=\"responsivize\">",
+			"Prefix",
+			"data-desktopPrefix=\"_desktop\" data-retinaPrefix=\"_x2\"",
+			"=\"desktop\"",
+			"data-large",
+			"src=\"",
+			"$body",
+			"imageRatio",
+			"setImageRatio",
+			"parallaxPanelRatio"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"documentSection",
+			"logo-print.png",
+			"left: 15px;",
+			"../../app/images/loading_small.gif"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 53865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 11389.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/adisinsight.css",
+					"settings":
+					{
+						"buffer_size": 166581,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/stickyNavigation.js",
+					"settings":
+					{
+						"buffer_size": 4767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1270,
+								1270
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 200.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/jquery.hotSpot.js",
+					"settings":
+					{
+						"buffer_size": 8289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7175,
+								7175
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2539.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"main",
+				"assets/js/main.js"
+			],
+			[
+				"footer",
+				"_includes/footer.html"
+			],
+			[
+				"_a",
+				"beechwood-client/app/styles/base/_a++.scss"
+			],
+			[
+				"annotator.sc",
+				"beechwood-client/app/styles/ui_components/_annotator.scss"
+			],
+			[
+				"print",
+				"beechwood-client/app/styles/_print.scss"
+			],
+			[
+				"respo",
+				"beechwood-client/app/styles/mixins/_respond-to.scss"
+			],
+			[
+				"_annota",
+				"beechwood-client/app/styles/ui_components/_annotator.scss"
+			],
+			[
+				"layou",
+				"beechwood-client/app/styles/base/_layout.scss"
+			],
+			[
+				"btn",
+				"beechwood-client/app/styles/ui_components/_btn.scss"
+			],
+			[
+				"error-h",
+				"beechwood-client/app/styles/ui_components/_error-handling.scss"
+			],
+			[
+				"anno",
+				"beechwood-client/app/styles/annotator.touch.css"
+			],
+			[
+				"_annotator",
+				"beechwood-client/app/styles/ui_components/_annotator.scss"
+			],
+			[
+				"nav",
+				"beechwood-client/app/styles/ui_components/_04_chapter-nav.scss"
+			],
+			[
+				"",
+				"beechwood-client/app/styles/base/_new-a++.scss"
+			],
+			[
+				"02_chapter-list",
+				"beechwood-client/app/styles/ui_components/_02_chapter-list.scss"
+			],
+			[
+				"newa",
+				"beechwood-client/app/styles/base/_new-a++.scss"
+			],
+			[
+				"base",
+				"beechwood-client/app/styles/base/_base.scss"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"tool",
+				"beechwood-client/app/views/toolbox.html"
+			],
+			[
+				"chapter",
+				"beechwood-server/app/views/chapter.scala.html"
+			],
+			[
+				"app.l",
+				"beechwood-server/ops/properties/app.default.properties"
+			],
+			[
+				"chapter.",
+				"beechwood-server/app/views/chapter.scala.html"
+			],
+			[
+				"main.scala",
+				"beechwood-server/app/views/main.scala.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/alessiocarnevale/casper/springersbm.github.io/jobSite.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 276.0,
+	"status_bar_visible": true
+}

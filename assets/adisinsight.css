@@ -1,0 +1,4206 @@
+/* COLOUR
+Standardized colour palette
+*********************************************************************************************************/
+/* TYPOGRAPHY
+Standardized sizes and families
+*********************************************************************************************************/
+/* Subscript/Superscript */
+/* To Be Defined */
+/* To Be Defined */
+/* To Be Defined */
+/* Default Body Text Size */
+/* To Be Defined */
+/* To Be Defined */
+/* To Be Defined */
+/* To Be Defined */
+/* To Be Defined */
+/* To Be Defined */
+/* To Be Defined */
+/* To Be Defined */
+/* To Be Defined */
+/* Z-INDEX
+Standarised z-index levels (excluding look-inside)
+*********************************************************************************************************/
+/* TEXTURE
+border-radii (gradients, shadows, etc. could potentially go here)
+*********************************************************************************************************/
+/* LOGO DEFAULTS
+*
+* Default behaviour is to have an extension next to the logo but no qualifier (SpringerLink style).
+*
+* Logo with EXTENSION looks like: SPRINGERLink
+* Logo with QUALIFIER looks like: SPRINGER    For Research&Development
+*
+*********************************************************************************************************/
+/* Mixins
+------------------------------------------------------------------------------*/
+/* Styles
+------------------------------------------------------------------------------*/
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 50, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 74, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 126, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 134, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 142, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 164, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 173, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+/* line 181, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 189, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 198, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 205, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 209, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 229, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 241, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 253, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 264, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 278, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 290, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 302, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 317, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 327, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 337, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 348, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 361, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 370, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 380, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 393, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+html {
+  font: 10px Arial, sans-serif;
+  /* Widescreen Global base font-size */ }
+
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+body {
+  font-size: 13px;
+  font-size: 1.3rem;
+  background: #f1f1f1 url(http://adis.dev1.springer-sbm.com:8080/assets/images/body-bg.png) repeat;
+  color: #333333; }
+
+/* Typography
+------------------------------------------------------------------------------*/
+/* line 14, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+h1, h2 {
+  font-family: Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  line-height: 1.2; }
+
+/* line 21, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+h1 {
+  font-size: 26px;
+  font-size: 2.6rem;
+  margin: 7px 0 14px; }
+@media screen and (min-width: 600px) {
+  /* line 21, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+  h1 {
+    /* MQ Tablet */
+    font-size: 30px;
+    font-size: 3rem; } }
+
+/* line 31, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+h1 span {
+  color: #999999; }
+
+/* line 35, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+h2 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin: 7px 0; }
+
+/* line 40, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+h3 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin: 7px 0 5px; }
+
+/* Links
+------------------------------------------------------------------------------*/
+/* line 49, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+a {
+  color: #0176c3;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* line 57, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+a:hover,
+a:active,
+a:focus {
+  color: #0176c3;
+  text-decoration: underline; }
+
+/* truncator */
+/* line 64, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+a[href='#more'],
+a[href='#less'] {
+  color: #666666;
+  font-size: 11px;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  white-space: nowrap; }
+
+/* line 72, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+a[href='#more']:hover,
+a[href='#less']:hover {
+  color: #333333; }
+
+/* external */
+/* line 77, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+a.external:after {
+  /* blue external link indicator */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAALUlEQVQYlWNgLDv8H4YZoABFDFkCGeBVABPDqgBDA7rdWO3C5gacVmBVgA8DACqIPj0jO7W7AAAAAElFTkSuQmCC") no-repeat right center;
+  /* patternify URL: http://ptrn.it/ugEXX3 */
+  content: '';
+  display: inline-block;
+  height: 8px;
+  margin-left: 7px;
+  width: 8px; }
+
+/* Forms
+------------------------------------------------------------------------------*/
+/* line 93, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+button,
+input,
+select,
+textarea {
+  color: #666666;
+  font-family: Arial, sans-serif; }
+
+/* line 102, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+input[type=text],
+input[type=number],
+input[type=date],
+input[type=password],
+textarea {
+  background-color: #FFF;
+  border: 1px solid #bcbcbc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 2px 2px 5px #efefef;
+  -moz-box-shadow: inset 2px 2px 5px #efefef;
+  box-shadow: inset 2px 2px 5px #efefef;
+  font-size: 13px;
+  font-size: 1.3rem;
+  padding: 4px 3px; }
+
+/* line 112, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+input[type=text].placeholder,
+input[type=password].placeholder {
+  color: #999999; }
+
+/* line 118, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+  border-color: #0176c3;
+  -webkit-box-shadow: 0 0 3px #0176c3;
+  -moz-box-shadow: 0 0 3px #0176c3;
+  box-shadow: 0 0 3px #0176c3;
+  outline: none; }
+
+/* line 128, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+button,
+input[type=button],
+input[type=submit],
+input[type=image],
+label {
+  cursor: pointer; }
+
+/* line 133, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* remove button padding in firefox */
+  border: 0;
+  padding: 0; }
+
+/* line 139, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+.lt-ie8 input,
+.lt-ie8 select {
+  vertical-align: middle; }
+
+/* Definition list */
+/* line 145, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+dl dt {
+  display: block;
+  font-weight: bold;
+  font-style: italic; }
+/* line 150, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+dl dd {
+  display: block;
+  margin: 0 0 7px; }
+
+/* line 157, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
+.js-hidden,
+.tooltip {
+  display: none; }
+
+/* line 1, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_container.scss */
+.container {
+  background: white;
+  -webkit-box-shadow: 0 0 4px #bbbbbb;
+  -moz-box-shadow: 0 0 4px #bbbbbb;
+  box-shadow: 0 0 4px #bbbbbb;
+  position: relative;
+  margin: 0 auto; }
+@media screen and (min-width: 1025px) {
+  /* line 1, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_container.scss */
+  .container {
+    /* MQ Widescreen */
+    width: 980px; } }
+/* line 11, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_container.scss */
+.lt-ie9 .container {
+  border: 1px solid #E2E2E2;
+  border-width: 0 1px; }
+
+/* Header */
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.main-header {
+  position: relative;
+  -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1);
+  background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/bg-mobile-header.png) 0 0 repeat-x;
+  border-top: 1px solid #f9f9f9;
+  border-bottom: 1px solid #d0d0d0;
+  min-height: 53px;
+  width: 100%;
+  top: 0;
+  z-index: 20; }
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_sticky.scss */
+.stickyElement {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 20; }
+
+
+.csspositionsticky .main-header {
+  position: relative;
+  top: 0;
+  z-index: 20; }
+
+@media screen and (min-width: 1025px) {
+  /* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  .main-header {
+    /* MQ Widescreen */
+    -webkit-box-shadow: 0 1px 0 white;
+    -moz-box-shadow: 0 1px 0 white;
+    box-shadow: 0 1px 0 white;
+    background-image: url(grdnt_grey_f8f8f8_e5e5e5_l.gif);
+    min-height: 141px;
+    width: auto; } }
+/* line 21, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.main-header h1 {
+  margin: 0; }
+
+/* Logo */
+/* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+#logo {
+  background-repeat: no-repeat;
+  color: transparent;
+  /* IE 6 & 7 for input */
+  direction: ltr;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -9999em;
+  text-transform: capitalize;
+  /* IE 6 & 7 for input */
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-image: url(Adis_Universe_logo_sprite.png);
+  background-position: 0 -61px;
+  display: inline-block;
+  height: 30px;
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  width: 92px; }
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  #logo {
+    background-image: url(http://adis.dev1.springer-sbm.com:8080/assets/images/Adis_Universe_logo_high_res_sprite.png);
+    background-size: auto 92px; } }
+@media screen and (min-width: 600px) {
+  /* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  #logo {
+    /* MQ Tablet */
+    left: 30px;
+    width: 92px; } }
+@media screen and (min-width: 1025px) {
+  /* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  #logo {
+    /* MQ Widescreen */
+    background-position: 0 -61px;
+    height: 36px;
+    width: 320px;
+    top: 23px; } }
+
+/* Header buttons */
+/* line 57, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.main-header .pillow-btn, .main-header .show-more .pillow-btn--show-more, .show-more .main-header .pillow-btn--show-more {
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  background-repeat: no-repeat;
+  border-color: gainsboro;
+  min-width: 21px;
+  text-indent: -9999em;
+  /* Open Search Options */
+  /* Open search */ }
+/* line 64, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.main-header .pillow-btn:hover, .main-header .show-more .pillow-btn--show-more:hover, .show-more .main-header .pillow-btn--show-more:hover {
+  border-color: #bcbcbc; }
+/* line 67, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.main-header .pillow-btn.pillow-btn-active, .main-header .show-more .pillow-btn-active.pillow-btn--show-more, .show-more .main-header .pillow-btn-active.pillow-btn--show-more, .main-header .show-more .pillow-btn--show-more:active, .show-more .main-header .pillow-btn--show-more:active {
+  padding: 0 15px;
+  margin: 1px;
+  -webkit-box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.35), inset 0 -1px 0 rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.35), inset 0 -1px 0 rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.35), inset 0 -1px 0 rgba(255, 255, 255, 0.75);
+  background-color: gainsboro; }
+/* line 75, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.main-header .pillow-btn.open-search-options, .main-header .show-more .open-search-options.pillow-btn--show-more, .show-more .main-header .open-search-options.pillow-btn--show-more {
+  background: url(springer-sprite.png) 0 -561px no-repeat; }
+/* line 78, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.main-header .pillow-btn.open-search-options:hover, .main-header .show-more .open-search-options.pillow-btn--show-more:hover, .show-more .main-header .open-search-options.pillow-btn--show-more:hover {
+  background-position: 0 -595px; }
+/* line 82, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.main-header .pillow-btn.open-search-options:active, .main-header .show-more .open-search-options.pillow-btn--show-more:active, .show-more .main-header .open-search-options.pillow-btn--show-more:active, .main-header .pillow-btn.open-search-options:focus, .main-header .show-more .open-search-options.pillow-btn--show-more:focus, .show-more .main-header .open-search-options.pillow-btn--show-more:focus {
+  background-position: 0 -595px; }
+/* line 90, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.main-header .pillow-btn.open-search, .main-header .show-more .open-search.pillow-btn--show-more, .show-more .main-header .open-search.pillow-btn--show-more {
+  background: url(springer-sprite.png) 0 -629px no-repeat;
+  position: absolute;
+  top: 7px;
+  right: 12px; }
+@media screen and (min-width: 600px) {
+  /* line 90, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  .main-header .pillow-btn.open-search, .main-header .show-more .open-search.pillow-btn--show-more, .show-more .main-header .open-search.pillow-btn--show-more {
+    /* MQ Tablet */
+    opacity: 0;
+    visibility: hidden; } }
+/* line 101, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.main-header .pillow-btn.open-search:hover, .main-header .show-more .open-search.pillow-btn--show-more:hover, .show-more .main-header .open-search.pillow-btn--show-more:hover {
+  /* hover */
+  background-position: 0 -663px; }
+/* line 105, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+body.show-search .main-header .pillow-btn.open-search, body.show-search .main-header .show-more .open-search.pillow-btn--show-more, .show-more body.show-search .main-header .open-search.pillow-btn--show-more {
+  /* active */
+  background-position: 0 -765px; }
+
+/* Search panel */
+/* line 112, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.panel-search {
+  background-color: gainsboro;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(gainsboro));
+  background-image: -webkit-linear-gradient(top, #e5e5e5, gainsboro);
+  background-image: -moz-linear-gradient(top, #e5e5e5, gainsboro);
+  background-image: -ms-linear-gradient(top, #e5e5e5, gainsboro);
+  background-image: -o-linear-gradient(top, #e5e5e5, gainsboro);
+  background-image: linear-gradient(top, #e5e5e5, gainsboro);
+  -webkit-box-shadow: 0 -1px 0 #d0d0d0;
+  -moz-box-shadow: 0 -1px 0 #d0d0d0;
+  box-shadow: 0 -1px 0 #d0d0d0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid gainsboro;
+  border-top: 1px solid white;
+  display: none;
+  width: 100%; }
+/* line 121, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+body.show-search .main-header .panel-search {
+  display: block;
+  margin-top: 55px; }
+@media screen and (min-width: 600px) {
+  /* line 112, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  .panel-search {
+    /* MQ Tablet */
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: auto;
+    left: 150px;
+    top: 0px;
+    display: block;
+    width: 45.04167%; }
+  /* line 138, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  body.show-search .main-header .panel-search, .panel-search {
+    margin-top: 0; }
+  /* line 142, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  .ie9 .panel-search {
+    filter: none; } }
+
+
+
+
+@media screen and (min-width: 1025px) {
+  /* line 112, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  .panel-search {
+    /* MQ Widescreen */
+    left: 30px;
+    top: 72px;
+    z-index: 5;
+    width: 51.0416666667%; 
+  } 
+}
+
+
+/* line 154, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.main-header .panel-search .big-search {
+  margin: 7px; }
+@media screen and (min-width: 1025px) {
+  /* line 154, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  .main-header .panel-search .big-search {
+    /* MQ Widescreen */
+    margin: 0; } }
+
+/* line 163, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.search-options {
+  display: none;
+  position: absolute;
+  top: 0; }
+@media screen and (min-width: 600px) {
+  /* line 163, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  .search-options {
+    /* MQ Tablet */
+    right: -66px;
+    top: -1px;
+    display: block; } }
+
+/* line 173, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.springer-logo {
+  background: url(springer_logo_small_retinaX2.png) 25px 12px no-repeat;
+  background-size: auto 26px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  border-left: 1px solid #e5e5e5;
+  display: block;
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  height: 42px;
+  width: 130px;
+  display: none; }
+/* line 185, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.ie8 .springer-logo {
+  background-image: url(http://adis.dev1.springer-sbm.com:8080/assets/images/springer_logo_small.png); }
+@media screen and (min-width: 600px) {
+  /* line 173, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  .springer-logo {
+    /* MQ Tablet */
+    background-position: 25px 14px;
+    display: block;
+    height: 53px;
+    right: 12px; } }
+@media screen and (min-width: 1025px) {
+  /* line 173, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  .springer-logo {
+    /* MQ Widescreen */
+    right: 25px;
+    height: 42px; } }
+/* line 201, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+.springer-logo:before {
+  content: "";
+  display: "";
+  float: left;
+  height: 53px;
+  width: 0px;
+  border-left: 1px solid #fff; }
+@media screen and (min-width: 1025px) {
+  /* line 201, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
+  .springer-logo:before {
+    /* MQ Widescreen */
+    height: 42px; } }
+
+/* Footer
+  ------------------------------------------------------------------------------*/
+/* line 4, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.main-footer {
+  background-color: #f4f4f4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(gainsboro));
+  background-image: -webkit-linear-gradient(top, #f4f4f4, gainsboro);
+  background-image: -moz-linear-gradient(top, #f4f4f4, gainsboro);
+  background-image: -ms-linear-gradient(top, #f4f4f4, gainsboro);
+  background-image: -o-linear-gradient(top, #f4f4f4, gainsboro);
+  background-image: linear-gradient(top, #f4f4f4, gainsboro);
+  -webkit-box-shadow: 0 -1px 0 0 gainsboro;
+  -moz-box-shadow: 0 -1px 0 0 gainsboro;
+  box-shadow: 0 -1px 0 0 gainsboro;
+  color: #666666;
+  font-size: 11px;
+  font-size: 1.1rem;
+  position: relative;
+  z-index: 2; }
+/* line 11, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.main-footer hr {
+  display: none; }
+/* line 14, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.main-footer a {
+  color: #666666; }
+
+/* line 19, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__section {
+  border-top: 1px solid #f9f9f9;
+  border-bottom: 1px solid gainsboro;
+  min-height: 20px;
+  padding: 10px 12px; }
+@media screen and (min-width: 600px) {
+  /* line 19, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+  .footer__section {
+    /* MQ Tablet */
+    padding: 20px 32px; } }
+
+/* line 30, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-verticals {
+  zoom: 1;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.footer__footer-verticals:before, .footer__footer-verticals:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.footer__footer-verticals:after {
+  clear: both; }
+/* line 34, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-verticals .strapline {
+  display: block;
+  font-size: 16px;
+  font-size: 1.6rem; }
+/* line 38, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-verticals .flyout {
+  float: none;
+  position: static; }
+/* line 42, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-verticals .flyout .pillow-btn, .footer__footer-verticals .flyout .show-more .pillow-btn--show-more, .show-more .footer__footer-verticals .flyout .pillow-btn--show-more {
+  background-color: #fdfcfc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfcfc), to(#edecec));
+  background-image: -webkit-linear-gradient(top, #fdfcfc, #edecec);
+  background-image: -moz-linear-gradient(top, #fdfcfc, #edecec);
+  background-image: -ms-linear-gradient(top, #fdfcfc, #edecec);
+  background-image: -o-linear-gradient(top, #fdfcfc, #edecec);
+  background-image: linear-gradient(top, #fdfcfc, #edecec);
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-size: 1.1rem;
+  font-weight: normal;
+  line-height: 2.6;
+  height: 28px;
+  margin: 10px 8px 0 0;
+  padding-right: 70px;
+  position: relative; }
+@media screen and (min-width: 600px) {
+  /* line 42, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+  .footer__footer-verticals .flyout .pillow-btn, .footer__footer-verticals .flyout .show-more .pillow-btn--show-more, .show-more .footer__footer-verticals .flyout .pillow-btn--show-more {
+    /* MQ Tablet */
+    position: absolute;
+    top: 5px;
+    right: 24px; } }
+/* line 57, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-verticals .flyout .pillow-btn.pillow-btn-active, .footer__footer-verticals .flyout .show-more .pillow-btn-active.pillow-btn--show-more, .show-more .footer__footer-verticals .flyout .pillow-btn-active.pillow-btn--show-more, .footer__footer-verticals .flyout .show-more .pillow-btn--show-more:active, .show-more .footer__footer-verticals .flyout .pillow-btn--show-more:active {
+  background: gainsboro;
+  line-height: 2.5;
+  padding-right: 71px; }
+/* line 63, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-verticals .flyout .pillow-btn .caret, .footer__footer-verticals .flyout .show-more .pillow-btn--show-more .caret, .show-more .footer__footer-verticals .flyout .pillow-btn--show-more .caret {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTRGMTMxOTREM0VGMTFFMUI2OTJDMzMzODg4NTdCNTAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTRGMTMxOTVEM0VGMTFFMUI2OTJDMzMzODg4NTdCNTAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1NEYxMzE5MkQzRUYxMUUxQjY5MkMzMzM4ODg1N0I1MCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1NEYxMzE5M0QzRUYxMUUxQjY5MkMzMzM4ODg1N0I1MCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pvj27RAAAABXSURBVHjaYkxLS7vEwMCgy4AbXGYCEhcY8IMLIEUFQPwOhwKQeAETlJGLQxFI/B0TlLMMiHegKdgBFWdgQhJMB+IvUPYXKJ8BXdEjqPFfoPQjmARAgAEAH0ETKOeYzi0AAAAASUVORK5CYII=) no-repeat 0 0;
+  display: block;
+  height: 9px;
+  opacity: 0.6;
+  position: absolute;
+  right: 12px;
+  top: 40%;
+  width: 9px; }
+/* line 72, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-verticals .flyout .pillow-btn:hover .caret, .footer__footer-verticals .flyout .show-more .pillow-btn--show-more:hover .caret, .show-more .footer__footer-verticals .flyout .pillow-btn--show-more:hover .caret {
+  opacity: 1; }
+/* line 76, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-verticals .flyout .pillow-btn.pillow-btn-active .caret, .footer__footer-verticals .flyout .show-more .pillow-btn-active.pillow-btn--show-more .caret, .show-more .footer__footer-verticals .flyout .pillow-btn-active.pillow-btn--show-more .caret, .footer__footer-verticals .flyout .show-more .pillow-btn--show-more:active .caret, .show-more .footer__footer-verticals .flyout .pillow-btn--show-more:active .caret {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDM0NTZCREJENEJCMTFFMUI2OTJDMzMzODg4NTdCNTAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDM0NTZCRENENEJCMTFFMUI2OTJDMzMzODg4NTdCNTAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1NEYxMzE5NkQzRUYxMUUxQjY5MkMzMzM4ODg1N0I1MCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEMzQ1NkJEQUQ0QkIxMUUxQjY5MkMzMzM4ODg1N0I1MCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pr5OmvwAAABvSURBVHjaYkxLS7t06+YtXUYGRgZ08B8I1dTVLrMA2RfEJcR1mZiYMBT9+/cPRF0AKSrg5+f3BtJCDJjgHUieCcrIZcAOQOLvYHYsA+IdaAp2QMUZkB2SDsRfoOwvUD4DuqJHUOO/QOlHMAmAAAMAM4AbO8FTp90AAAAASUVORK5CYII=);
+  opacity: 1;
+  right: 13px;
+  top: 42%; }
+
+/* 02. Navigation */
+/* line 87, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-nav {
+  zoom: 1;
+  margin-bottom: 12px;
+  position: relative;
+  display: none; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.footer__footer-nav:before, .footer__footer-nav:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.footer__footer-nav:after {
+  clear: both; }
+@media screen and (min-width: 1025px) {
+  /* line 87, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+  .footer__footer-nav {
+    /* MQ Widescreen */
+    display: block; } }
+/* line 101, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-nav .block {
+  -webkit-box-shadow: 1px 0 0 0 rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: 1px 0 0 0 rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 0 0 0 rgba(255, 255, 255, 0.7);
+  border-right: 1px solid rgba(197, 196, 196, 0.5);
+  display: block;
+  float: left;
+  margin: 10px 2% 0 0;
+  min-height: 145px;
+  padding: 0 21px 10px 0;
+  width: 21%; }
+/* line 111, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-nav h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  font-size: 1.5rem; }
+/* line 117, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-nav li {
+  line-height: 1.9; }
+
+/* 03. Legal */
+/* line 123, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-legal {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  line-height: 1.7;
+  position: relative;
+  zoom: 1; }
+@media screen and (min-width: 600px) {
+  /* line 123, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+  .footer__footer-legal {
+    /* MQ Tablet */
+    font-size: 14px;
+    font-size: 1.4rem; } }
+@media screen and (min-width: 1025px) {
+  /* line 123, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+  .footer__footer-legal {
+    /* MQ Widescreen */ }
+  /* line 134, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+  .footer__footer-legal.footer__section {
+    border-top: none; } }
+/* line 139, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-legal .open-legal {
+  line-height: 3;
+  margin-right: 10px;
+  vertical-align: middle; }
+/* line 141, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+.footer__footer-legal .open-legal.pillow-btn-active, .footer__footer-legal .show-more .open-legal.pillow-btn--show-more:active, .show-more .footer__footer-legal .open-legal.pillow-btn--show-more:active {
+  line-height: 3.1; }
+@media screen and (min-width: 600px) {
+  /* line 139, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+  .footer__footer-legal .open-legal {
+    /* MQ Tablet */
+    line-height: 2.4; }
+  /* line 149, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+  .footer__footer-legal .open-legal.pillow-btn-active, .footer__footer-legal .show-more .open-legal.pillow-btn--show-more:active, .show-more .footer__footer-legal .open-legal.pillow-btn--show-more:active {
+    line-height: 2.5; } }
+@media screen and (min-width: 1025px) {
+  /* line 139, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-footer.scss */
+  .footer__footer-legal .open-legal {
+    /* MQ Widescreen */
+    display: none; } }
+
+
+
+
+
+
+/* Content */
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-content.scss */
+.main-content {
+  background: #fff;
+  min-height: 600px;
+  padding: 12px 12px 50px 12px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+
+  zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 0 white, inset 0 18px 18px -18px #efefef;
+  -moz-box-shadow: inset 0 1px 0 0 white, inset 0 18px 18px -18px #efefef;
+  box-shadow: inset 0 1px 0 0 white, inset 0 18px 18px -18px #efefef;
+  position: relative;
+  z-index: 15; 
+
+}
+
+
+
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.main-content:before, .main-content:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.main-content:after {
+  clear: both; }
+/* line 12, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-content.scss */
+body.enable-popup .main-content {
+  z-index: 25 !important; }
+@media screen and (min-width: 600px) {
+  /* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-content.scss */
+  .main-content {
+    /* MQ Tablet */
+    padding: 20px; 
+  } 
+}
+
+/* Layouts
+------------------------------------------------------------------------------*/
+/* based on a 980 grid with 12 columns,*/
+/* line 6, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+.layout__col-aside,
+.layout__col-main {
+  margin: 0;
+  width: 100%; }
+@media screen and (min-width: 600px) {
+  /* line 6, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout__col-aside,
+  .layout__col-main {
+    /* MQ Tablet */
+    display: inline;
+    float: left;
+    margin-bottom: 30px; } }
+
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_sticky.scss */
+.csspositionsticky .layout__col-aside {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 74px;
+  z-index: 20; }
+@media screen and (min-width: 1025px) {
+  /* line 17, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout__col-aside {
+    /* MQ Widescreen */ }
+  /* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_sticky.scss */
+  .csspositionsticky .layout__col-aside {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 25px;
+    z-index: 20; } }
+
+/* layout 1 (4/8, e.g. home) */
+/* line 25, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+.layout-1 {
+  zoom: 1; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.layout-1:before, .layout-1:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.layout-1:after {
+  clear: both; }
+@media screen and (min-width: 600px) {
+  /* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-1 .col-aside {
+    /* MQ Tablet */
+    width: 31.914893617%;
+    /* Math: 300 / 940 */ } }
+@media screen and (min-width: 600px) {
+  /* line 33, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-1 .layout__col-main {
+    /* MQ Tablet */
+    float: right;
+    width: 65.9574468085%;
+    /* Math: 620 / 940 */ } }
+
+/* layout 2 (3/9, e.g. results) */
+/* line 41, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+.layout-2 {
+  zoom: 1; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.layout-2:before, .layout-2:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.layout-2:after {
+  clear: both; }
+@media screen and (min-width: 600px) {
+  /* line 43, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-2 .layout__col-aside {
+    /* MQ Tablet */
+    width: 23.40426%; } }
+@media screen and (min-width: 600px) {
+  /* line 50, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-2 .layout__col-main {
+    /* MQ Tablet */
+    float: right;
+    width: 74.4680851064%;
+    /* Math: 700 / 940 */ } }
+
+/* layout 3 (8/4, e.g. abstract) */
+/* line 58, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+.layout-3 {
+  zoom: 1; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.layout-3:before, .layout-3:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.layout-3:after {
+  clear: both; }
+/* line 60, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+.layout-3 .layout__col-main {
+  position: relative; 
+}
+@media screen and (min-width: 600px) {
+  /* line 60, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-3 .layout__col-main {
+    /* MQ Tablet */
+    margin-left: 4.25531914894%;
+    /* Math: 40 / 940 */
+    width: 61.7021276596%;
+    /* Math: 580 / 940 */ } }
+/* line 70, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+.layout-3 .layout__col-aside + * {
+  clear: left; }
+@media screen and (min-width: 600px) {
+  /* line 69, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-3 .layout__col-aside {
+    /* MQ Tablet */
+    margin-left: 4.25531914894%;
+    /* Math: 40 / 940 */
+    width: 25.5319148936%;
+    /* Math: 240 / 940 */ } }
+
+/* layout 3b (8/4 width col-aside first, e.g. only Signup) */
+/* line 82, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+.layout-3b {
+  zoom: 1; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.layout-3b:before, .layout-3b:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.layout-3b:after {
+  clear: both; }
+/* line 84, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+.layout-3b .layout__col-main {
+  position: relative; }
+@media screen and (min-width: 600px) {
+  /* line 84, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-3b .layout__col-main {
+    /* MQ Tablet */
+    margin-left: 4.25531914894%;
+    /* Math: 40 / 940 */
+    width: 61.7021276596%;
+    /* Math: 580 / 940 */ } }
+/* line 93, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+.layout-3b .layout__col-aside {
+  margin-bottom: 0; }
+@media screen and (min-width: 600px) {
+  /* line 93, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-3b .layout__col-aside {
+    /* MQ Tablet */
+    float: right;
+    margin: auto 4.25531914894% 30px auto;
+    width: 25.5319148936%;
+    /* Math: 240 / 940 */ } }
+
+/* layout 4 (~7, e.g. info) */
+@media screen and (min-width: 600px) {
+  /* line 105, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-4 {
+    /* MQ Tablet */
+    padding: 10px 34.0425531915% 54px 4.25531914894%;
+    /* Math: 320 / 940 &  40 / 940*/ } }
+
+/* layout 5 (1 column) */
+@media screen and (min-width: 600px) {
+  /* line 113, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-5 {
+    /* MQ Tablet */
+    padding: 0 4.95283018868%;
+    /* Math: 42 / 848 */ } }
+
+/* layout 6 (6/6 without margins, e.g. support/manage promotions) */
+/* line 121, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+.layout-6 {
+  zoom: 1; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.layout-6:before, .layout-6:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.layout-6:after {
+  clear: both; }
+@media screen and (min-width: 600px) {
+  /* line 123, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-6 .layout__col-main {
+    /* MQ Tablet */
+    width: 46.808511%;
+    /*44.6808510638%;   /* Math: 440 / 940 */ } }
+/* line 130, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+.layout-6 .layout__col-aside {
+  position: relative; }
+@media screen and (min-width: 600px) {
+  /* line 130, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_layouts.scss */
+  .layout-6 .layout__col-aside {
+    /* MQ Tablet */
+    margin-left: 6.3829787234%;
+    /* Math: 60 / 940 */
+    width: 46.808511%;
+    /* Math: 440 / 940 */ } }
+
+/* For Sticky Header (mobile only) */
+/* Enumeration */
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_enumeration.scss */
+.document__enumeration {
+  font-size: 11px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  white-space: no-wrap;
+  width: 100%; }
+/* line 7, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_enumeration.scss */
+.document__enumeration a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+@media screen and (min-width: 1025px) {
+  /* line 7, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_enumeration.scss */
+  .document__enumeration a {
+    /* MQ Widescreen */
+    color: #333333; } }
+/* line 14, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_enumeration.scss */
+.layout__col-main:hover .document__enumeration a {
+  color: #0176c3; }
+/* line 18, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_enumeration.scss */
+.document__enumeration span {
+  font-size: 13px;
+  font-size: 1.3rem; }
+
+@media screen and (min-device-width: 320px) {
+  /* MQ Smartphone */
+  /* Pillow-emboss button
+    ------------------------------------------------------------------------------*/
+  /* line 6, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_button-pillow.scss */
+  .pillow-btn, .show-more .pillow-btn--show-more {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    -webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+    -webkit-transition: right 0.25s ease-in-out;
+    -moz-transition: right 0.25s ease-in-out;
+    -o-transition: right 0.25s ease-in-out;
+    transition: right 0.25s ease-in-out;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    display: inline-block;
+    height: 34px;
+    opacity: 1;
+    padding: 0 15px;
+    visibility: visible;
+    white-space: nowrap; }
+  /* line 19, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_button-pillow.scss */
+  .ie9 .pillow-btn, .ie9 .show-more .pillow-btn--show-more, .show-more .ie9 .pillow-btn--show-more {
+    filter: none; }
+  /* line 22, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_button-pillow.scss */
+  .pillow-btn:hover, .show-more .pillow-btn--show-more:hover {
+    border-color: #bcbcbc; }
+  /* line 25, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_button-pillow.scss */
+  .pillow-btn.pillow-btn-active, .show-more .pillow-btn-active.pillow-btn--show-more, .show-more .pillow-btn--show-more:active {
+    -webkit-box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.35), inset 0 -1px 0 rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.35), inset 0 -1px 0 rgba(255, 255, 255, 0.75);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.35), inset 0 -1px 0 rgba(255, 255, 255, 0.75);
+    background-color: gainsboro;
+    border: none;
+    padding: 1px 16px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.85); }
+  /* line 32, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_button-pillow.scss */
+  .lt-ie9 .pillow-btn, .lt-ie9 .show-more .pillow-btn--show-more, .show-more .lt-ie9 .pillow-btn--show-more {
+    display: block; } }
+/* line 1, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.data-list {
+  font-size: 13px;
+  font-size: 1.3rem;
+  overflow: hidden;
+  margin-bottom: 10px; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.section--properties .data-list {
+  overflow: visible;
+  width: 100%;
+  margin-top: 10px; }
+@media screen and (min-width: 600px) {
+  /* line 1, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+  .data-list {
+    /* MQ Tablet */
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: top; }
+  /* line 15, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+  .data-list.data-list--col2 {
+    margin-right: 2.32558%;
+    width: 48.33721%; }
+  /* line 19, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+  .ie8 .data-list.data-list--col2 {
+    width: 47.23721%; }
+  /* line 23, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+  .data-list.data-list--col2:nth-child(even) {
+    margin-right: 0; }
+  /* line 28, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+  .data-list.data-list--col3 {
+    margin-right: 2.32558%;
+    width: 31.272874%; }
+  /* line 32, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+  .data-list.data-list--col3:nth-child(3n+3) {
+    margin-right: 0; } }
+
+/* line 39, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.data-list__heading {
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #777777;
+  clear: left;
+  font-weight: bold;
+  margin-bottom: 25px; }
+/* line 46, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.document--drug-profile .data-list__heading {
+  color: #333333;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  border-bottom: 1px solid #D7D6D6; }
+
+/* line 56, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.data-list__content {
+  margin: 0;
+  padding: 0; }
+
+/* line 61, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.data-list__property {
+  list-style: none;
+  margin-bottom: 10px;
+  zoom: 1;
+  margin-bottom: 15px; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.data-list__property:before, .data-list__property:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.data-list__property:after {
+  clear: both; }
+/* line 67, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.document--drug-profile .data-list__property {
+  margin-bottom: 10px; }
+
+/* line 72, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.data-list__property-key {
+  font-style: normal;
+  float: left;
+  width: 35%; }
+/* line 76, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.document--drug-profile .data-list__property-key {
+  text-align: right;
+  margin-right: 30px;
+  width: 30%;
+  line-height: 19px; }
+/* line 83, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.data-list__content--highest-dev-phases .data-list__property-key {
+  position: relative;
+  top: -4px; }
+
+/* line 89, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.data-list__property-value {
+  color: #777777;
+  float: left;
+  line-height: 19px;
+  width: 65%; }
+/* line 94, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.data-list__property-value p {
+  margin: 0 0 5px 0; }
+/* line 97, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_data-list.scss */
+.document--drug-profile .data-list__property-value {
+  width: 63%;
+  color: #666666; }
+
+/* line 1, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_definition-list.scss */
+.definition-list {
+  font-size: 13px;
+  font-size: 1.3rem;
+  overflow: hidden;
+  margin-bottom: 10px; }
+@media screen and (min-width: 600px) {
+  /* line 1, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_definition-list.scss */
+  .definition-list {
+    /* MQ Tablet */
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: top; }
+  /* line 10, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_definition-list.scss */
+  .definition-list.definition-list--col2 {
+    margin-right: 2.32558%;
+    width: 48.33721%; }
+  /* line 14, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_definition-list.scss */
+  .definition-list.definition-list--col2:nth-child(even) {
+    margin-right: 0; }
+  /* line 19, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_definition-list.scss */
+  .definition-list.definition-list--col3 {
+    margin-right: 2.32558%;
+    width: 31.272874%; }
+  /* line 23, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_definition-list.scss */
+  .definition-list.definition-list--col3:nth-child(3n+3) {
+    margin-right: 0; } }
+
+/* line 30, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_definition-list.scss */
+.definition-list__heading {
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #777777;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+/* line 37, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_definition-list.scss */
+.definition-list__content {
+  margin: 0;
+  zoom: 1; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.definition-list__content:before, .definition-list__content:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.definition-list__content:after {
+  clear: both; }
+
+/* line 42, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_definition-list.scss */
+.definition-term {
+  clear: left;
+  float: left;
+  font-style: normal;
+  padding-right: 4px; }
+
+/* line 49, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_definition-list.scss */
+.definition-description {
+  display: inline-block;
+  float: left;
+  margin-bottom: 5px; }
+/* line 54, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_definition-list.scss */
+.document--landoltbornstein-db .definition-description {
+  border-bottom: 1px solid gainsboro;
+  margin: 2px 0 10px;
+  padding-bottom: 10px; }
+
+@media screen and (min-device-width: 320px) {
+  /* MQ Smartphone */
+  /* Facets
+  ------------------------------------------------------------------------------*/
+  /* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets {
+    border: 1px solid gainsboro;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.04);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.04);
+    margin-top: 13px;
+    /* list */ }
+  /* line 11, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets ol li {
+    border-top: 1px solid #E9E9E9;
+    font-size: 11px;
+    font-size: 1.1rem;
+    position: relative;
+    list-style: none; }
+  /* line 16, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets ol li:first-child {
+    border-top: 0; }
+  /* line 19, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets ol li a {
+    border: 1px solid #FFF;
+    color: #333333;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    zoom: 1;
+    /* facet mouseover and click */ }
+  /* line 28, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets ol li a:hover {
+    text-decoration: none; }
+  /* line 30, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets ol li a:hover .facet-values__title {
+    color: #ee7d11; }
+
+  /* header */
+  /* line 38, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets-header {
+    background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+    border-bottom: 1px solid gainsboro;
+    -webkit-box-shadow: inset 0 1px 0 0 white;
+    -moz-box-shadow: inset 0 1px 0 0 white;
+    box-shadow: inset 0 1px 0 0 white;
+    padding: 6px 10px;
+    position: relative; }
+  /* line 44, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets-header h3 {
+    font-size: 13px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0; }
+  /* line 49, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .adis-search-results .facets-header h3 {
+    padding-right: 35px; }
+  /* line 53, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets-header .all {
+    color: #333333;
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 1.2;
+    position: absolute;
+    right: 10px;
+    top: 7px; }
+
+  /* line 61, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets__facet-values {
+    margin: 0;
+    padding: 0; }
+  /* line 64, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  #cboxLoadedContent .facets__facet-values {
+    overflow-y: auto; }
+
+  /* line 69, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facet-values__title {
+    display: block;
+    line-height: 1.1;
+    padding: 5px 55px 5px 10px;
+    position: relative;
+    z-index: 10;
+    word-wrap: break-word; }
+
+  /* line 76, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facet-values__amount {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    z-index: 10; }
+
+  /* line 79, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facet-values__percentage {
+    background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    text-indent: -999em; }
+
+  /* facet active */
+  /* line 90, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets__facet-active .facet-values__title {
+    color: #ee7d11;
+    font-weight: bold;
+    padding-right: 25px; }
+  /* line 95, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets__facet-active .facet-values__amount {
+    display: none; }
+  /* line 99, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets__facet-active a:hover .facet-values__remove {
+    background-position: 0 -50px; }
+  /* line 102, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets__facet-active a:active .facet-values__remove {
+    background-position: 0 -75px; }
+
+  /* remove (maybe move this part to the global elements section if also used on other pages) */
+  /* line 108, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facet-values__remove {
+    background-repeat: no-repeat;
+    color: transparent;
+    /* IE 6 & 7 for input */
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999em;
+    text-transform: capitalize;
+    /* IE 6 & 7 for input */
+    background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/remove_icons.png) no-repeat;
+    height: 14px;
+    width: 14px; }
+  /* line 113, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facet-values__remove:hover {
+    background-position: 0 -50px; }
+  /* line 117, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets .facet-values__remove {
+    position: absolute;
+    right: 9px;
+    bottom: 4px;
+    z-index: 5; }
+
+  /* expanded facet */
+  /* line 123, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets--facet-expanded {
+    border-color: #cccccc;
+    margin: 24px auto;
+    width: 99.8%; }
+  /* line 127, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets--facet-expanded .facets-header {
+    border-bottom: 1px solid #BBBCBD;
+    padding: 11px 20px;
+    height: 16px; }
+  /* line 132, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets--facet-expanded .facets-header h3 {
+    font-size: 16px;
+    font-size: 1.6rem; }
+  /* line 134, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .search-results-cbox .facets--facet-expanded .facets-header h3 {
+    height: 16px; }
+  /* line 138, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets--facet-expanded .facets-header .btn, .facets--facet-expanded .facets-header button#cboxClose {
+    position: absolute;
+    right: 8px;
+    top: 5px; }
+  /* line 143, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets--facet-expanded li a:active {
+    background-color: #ee7d11; }
+  /* line 145, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets--facet-expanded li a:active .facet-values__title {
+    color: #FFF; }
+  /* line 149, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facets--facet-expanded li a:active .facet-values__percentage, .facets--facet-expanded li a:active .facet-values__amount {
+    visibility: hidden; }
+
+  /* expanded facet in the lightbox */
+  /* line 156, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  #cboxLoadedContent .facets--facet-expanded {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin: 0; }
+
+  /* Loading
+  ------------------------------------------------------------------------------*/
+  /* line 165, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facet-values__link.loading .facet-values__remove,
+  .facet-values__link.loading:hover .facet-values__remove,
+  .facet-values__link.loading .facet-values__amount {
+    display: none; }
+
+  /* line 169, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .facet-values__link .loading {
+    height: 14px;
+    position: absolute;
+    right: 12px;
+    top: 4px;
+    width: 14px;
+    z-index: 5; }
+  /* line 177, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .results .layout__col-main .facet-values__link .loading {
+    right: 0;
+    top: 1px; }
+  /* line 183, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  .container .main-content .facet-values__link.loading {
+    background: none; }
+
+  /* line 188, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  #global-search img.loading {
+    height: 20px;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    width: 20px;
+    z-index: 5; }
+
+  /* line 197, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  img.loading {
+    height: 14px;
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    width: 14px;
+    z-index: 5; }
+
+  /* line 206, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_filter.scss */
+  img.display-none {
+    display: none; } }
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_forms.scss */
+.extended-search .default-form {
+  border: solid 1px #DCDCDA;
+  /* should be the same border width as .selectBox-dropdown */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
+
+/* line 8, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_forms.scss */
+.form-row label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold; }
+/* line 13, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_forms.scss */
+.form-row input[type="text"] {
+  width: 420px;
+  margin-bottom: 10px; }
+
+/* line 18, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_forms.scss */
+.form-submit-section {
+  background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+  padding: 12px 20px; }
+
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_phase-list.scss */
+.phase-list .phase-list__phase {
+  list-style: none;
+  line-height: normal;
+  text-align: right;
+  margin-bottom: 1px; }
+/* line 7, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_phase-list.scss */
+.phase-list .phase-list__phase .phase-list__phase-name, .phase-list .phase-list__phase .phase-list__drug-status {
+  font-size: 11px;
+  color: #999999; }
+/* line 10, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_phase-list.scss */
+.phase-list .phase-list__phase .phase-list__phase-name.active-drug-phase, .phase-list .phase-list__phase .phase-list__drug-status.active-drug-phase {
+  color: #777777; }
+
+/* line 17, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_phase-list.scss */
+.phase-list__drug-status {
+  background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/bucket-list-status.png) repeat-x;
+  font-size: 10px;
+  color: #999999;
+  display: inline-block;
+  height: 18px;
+  width: 5px;
+  position: relative;
+  top: 4px;
+  margin-left: 5px; }
+/* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_phase-list.scss */
+.phase-list__drug-status.active {
+  background-position: 0 -19px; }
+/* line 30, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_phase-list.scss */
+.phase-list__drug-status.inactive {
+  background: #f4f4f4; }
+/* line 34, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_phase-list.scss */
+.phase-list__drug-status.marketed-status {
+  background-position: 0 0; }
+
+@media screen and (min-device-width: 320px) {
+  /* MQ Smartphone */
+  /* Search
+    ------------------------------------------------------------------------------*/
+  /* line 6, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .search-submit {
+    background-repeat: no-repeat;
+    color: transparent;
+    /* IE 6 & 7 for input */
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999em;
+    text-transform: capitalize;
+    /* IE 6 & 7 for input */ }
+
+  /* line 10, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search {
+    position: relative; }
+  /* line 12, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search input {
+    vertical-align: bottom; }
+  /* line 15, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .search-field {
+    /* extra div needed because IE doesn't support padding-right on input fields therefore text would overlap the "new search" link */
+    background-color: #FFF;
+    border: 1px solid #bcbcbc;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.11);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.11);
+    height: 36px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 52px;
+    position: relative; }
+  /* line 26, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .lt-ie8 .big-search .search-field {
+    width: auto;
+    height: 35px; }
+  /* line 31, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search.contains-new-search-link .search-field {
+    padding-right: 107px; }
+  /* line 37, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search.has-focus .search-field {
+    /* this selector needed for :focus styles, class applied with JS */
+    border-color: #0176c3;
+    -webkit-box-shadow: 0 0 3px #0176c3;
+    -moz-box-shadow: 0 0 3px #0176c3;
+    box-shadow: 0 0 3px #0176c3;
+    outline: none; }
+  /* line 42, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .text {
+    background-color: transparent;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: 200;
+    height: 34px;
+    letter-spacing: 0.02em;
+    padding: 5px 9px 2px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  /* line 55, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .text:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    outline: none; }
+  /* line 60, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .lt-ie9 .big-search .text {
+    width: 98%;
+    height: 27px;
+    line-height: 1.5; }
+  /* line 65, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .ie9 .big-search .text {
+    padding: 7px 9px 0px; }
+  /* line 69, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .adisinsight__search-box .big-search .text {
+    width: 74%; }
+  /* line 73, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .search-submit {
+    background: #0176c3 url(springer-sprite.png) 0 -1748px no-repeat;
+    border: 1px solid #0176c3;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 16px;
+    font-size: 1.6rem;
+    height: 36px;
+    padding: 0;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    z-index: 5;
+    width: 52px; }
+  /* line 84, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .search-submit:hover, .big-search .search-submit:focus {
+    border-color: #02548a; }
+  /* line 87, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .search-submit:active {
+    border-color: #02548a; }
+  /* line 90, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .lt-ie8 .big-search .search-submit {
+    top: 1px; }
+  /* line 95, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .search-submit.loading, .big-search .search-submit.loading:hover, .big-search .search-submit.loading:focus {
+    background-position: 0 -3086px; }
+  /* line 103, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search #global-search-new {
+    color: #bcbcbc;
+    font-size: 11px;
+    font-size: 1.1rem;
+    height: 27px;
+    line-height: 2.5;
+    position: absolute;
+    right: 60px;
+    top: 6px;
+    z-index: 5;
+    overflow: hidden;
+    text-decoration: none;
+    width: 40px; }
+  /* line 118, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search #global-search-new:hover, .big-search #global-search-new:focus {
+    color: #666666; }
+  /* line 121, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search #global-search-new:before {
+    background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/remove_icons.png) no-repeat 0 -100px;
+    content: '';
+    display: inline-block;
+    height: 14px;
+    margin: 0 6px 0 16px;
+    vertical-align: text-bottom;
+    width: 14px; }
+  /* line 137, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search #global-search-new:hover:before, .big-search #global-search-new:focus:before, .big-search #global-search-new:active:before {
+    background-position: 0 0; }
+  /* line 140, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search #global-search-new:after {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAYAAABS3WWCAAAAEElEQVQImWPYs2fPfwY4AAAnqAM0Zy8pUwAAAABJRU5ErkJggg==") repeat-y 0 0;
+    content: '';
+    display: block;
+    height: 27px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px; }
+
+  /* Search Filter */
+  /* line 153, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .search-filter.selectBox-dropdown, .big-search .selectBox-dropdown, .extended-search .search-filter.selectBox-dropdown, .extended-search .selectBox-dropdown {
+    background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+    font-size: 13px;
+    font-size: 1.3rem;
+    padding: 9px 15px 9px 10px;
+    position: absolute;
+    right: 51px;
+    top: -1px;
+    width: 90px !important;
+    height: 16px;
+    border: 1px solid #bcbcbc;
+    text-decoration: none;
+    text-align: left;
+    color: #666666;
+    outline: none;
+    vertical-align: middle;
+    cursor: pointer; }
+  /* line 169, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .search-filter.selectBox-dropdown.selectBox-menuShowing, .big-search .selectBox-dropdown.selectBox-menuShowing, .extended-search .search-filter.selectBox-dropdown.selectBox-menuShowing, .extended-search .selectBox-dropdown.selectBox-menuShowing {
+    background: #fff;
+    border-bottom: none;
+    color: #0176c3;
+    box-shadow: none; }
+  /* line 175, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .search-filter.selectBox-dropdown.selectBox-menuShowing .selectBox-arrow, .big-search .selectBox-dropdown.selectBox-menuShowing .selectBox-arrow, .extended-search .search-filter.selectBox-dropdown.selectBox-menuShowing .selectBox-arrow, .extended-search .selectBox-dropdown.selectBox-menuShowing .selectBox-arrow {
+    display: none; }
+  /* line 184, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .selectBox-label, .extended-search .selectBox-label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-shadow: 1px 1px 1px #fff;
+    display: block; }
+  /* line 191, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search .selectBox-arrow, .extended-search .selectBox-arrow {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    width: 10px;
+    height: 9px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTRGMTMxOTREM0VGMTFFMUI2OTJDMzMzODg4NTdCNTAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTRGMTMxOTVEM0VGMTFFMUI2OTJDMzMzODg4NTdCNTAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1NEYxMzE5MkQzRUYxMUUxQjY5MkMzMzM4ODg1N0I1MCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1NEYxMzE5M0QzRUYxMUUxQjY5MkMzMzM4ODg1N0I1MCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pvj27RAAAABXSURBVHjaYkxLS7vEwMCgy4AbXGYCEhcY8IMLIEUFQPwOhwKQeAETlJGLQxFI/B0TlLMMiHegKdgBFWdgQhJMB+IvUPYXKJ8BXdEjqPFfoPQjmARAgAEAH0ETKOeYzi0AAAAASUVORK5CYII=) no-repeat 0 0; } }
+@media screen and (min-device-width: 320px) and (min-width: 1025px) {
+  /* line 31, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search.contains-new-search-link .search-field {
+    /* MQ Widescreen */
+    padding-right: 157px; } }
+@media screen and (min-device-width: 320px) and (min-width: 1025px) {
+  /* line 103, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search #global-search-new {
+    /* MQ Widescreen */
+    width: auto; } }
+@media screen and (min-device-width: 320px) and (min-width: 1025px) {
+  /* line 121, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .big-search #global-search-new:before {
+    /* MQ Widescreen */
+    margin-left: 11px; } }
+/* Dropdown menu */
+/* line 205, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+#search-filter-dropdown {
+  background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+  font-size: 13px;
+  font-size: 1.3rem;
+  background-repeat: no-repeat;
+  background-position: 95px center;
+  position: absolute;
+  right: 50px;
+  width: 117px;
+  height: 34px;
+  line-height: 34px;
+  border: none;
+  padding-left: 10px;
+  border-left: 1px solid #bcbcbc;
+  border-radius: 0;
+  text-decoration: none;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #fff;
+  -moz-appearance: window; }
+
+/* line 229, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.selectBox-dropdown-menu {
+  width: auto !important;
+  position: absolute;
+  z-index: 99999;
+  max-height: 200px;
+  min-height: 1em;
+  border: solid 1px #BBB;
+  /* should be the same border width as .selectBox-dropdown */
+  border-top: none;
+  background: #FFF;
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+
+/* Options */
+/* line 248, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.selectBox-options,
+.selectBox-options li,
+.selectBox-options li a {
+  list-style: none;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0; }
+
+/* line 256, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.selectBox-options li a {
+  line-height: 1.5;
+  padding: 5px 20px 5px 10px;
+  text-decoration: none;
+  color: #666666; }
+
+/* line 263, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.selectBox-options li.selectBox-hover a {
+  background-color: #EEE;
+  color: #0176c3; }
+
+/* line 268, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.selectBox-options li.selectBox-disabled a {
+  color: #888;
+  background-color: transparent; }
+
+/* line 276, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.selectBox-options .selectBox-optgroup {
+  color: #666;
+  background: #EEE;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0 .3em;
+  white-space: nowrap; }
+
+/* For Advanced Search*/
+/* line 287, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.advanced-search {
+  display: none; }
+/* line 289, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.advanced-search .advanced-search-form {
+  border: solid 1px #BBB;
+  /* should be the same border width as .selectBox-dropdown */
+  border-top: none;
+  background: #FFF;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.11);
+  height: 346px; }
+/* line 300, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.advanced-search .form-section {
+  border-bottom: solid 1px #BBB;
+  width: auto !important;
+  z-index: 99999;
+  max-height: 200px;
+  min-height: 1em;
+  padding: 10px; }
+/* line 308, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.advanced-search .form-section p {
+  color: #666666; }
+/* line 313, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.advanced-search.show-advanced-search {
+  display: block !important; }
+
+/* line 317, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.advanced-search .form-section {
+  max-width: 506px;
+  width: 86.4957264957%;
+  /* Math 506 / 585 */ }
+
+/* line 321, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.advanced-search input[type="text"] {
+  width: 94.4%;
+  /* Math 480 / 506 */ }
+
+/* line 324, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.advanced-search form h2 {
+  font-size: 20px;
+  font-size: 2rem;
+  margin: 0;
+  padding: 20px 0 0 0; }
+
+/* line 329, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.advanced-search label {
+  font-weight: normal; }
+
+/* line 332, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.adv-search-field {
+  position: relative; }
+
+/* =extended search */
+/* line 337, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.extended-search {
+  margin-left: 4.25532%;
+  padding-top: 12px;
+  width: 92%; }
+@media screen and (min-width: 1025px) {
+  /* line 337, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .extended-search {
+    /* MQ Widescreen */
+    width: 654px; } }
+/* line 346, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.extended-search .form-row {
+  padding: 20px 20px 5px 20px;
+  -webkit-box-shadow: inset 0 1px 0 0 white, inset 0 20px 18px -18px #efefef;
+  -moz-box-shadow: inset 0 1px 0 0 white, inset 0 20px 18px -18px #efefef;
+  box-shadow: inset 0 1px 0 0 white, inset 0 20px 18px -18px #efefef;
+  border-bottom: 1px solid #DCDCDA; }
+/* line 351, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.extended-search .form-row input[type="text"] {
+  height: 20px;
+  margin: 0 0 15px 67px;
+  width: 25%; }
+@media screen and (min-width: 600px) {
+  /* line 351, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .extended-search .form-row input[type="text"] {
+    /* MQ Tablet */
+    width: 70%; } }
+@media screen and (min-width: 1025px) {
+  /* line 351, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+  .extended-search .form-row input[type="text"] {
+    /* MQ Widescreen */
+    width: 420px; } }
+/* line 365, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.extended-search .form-row .advance-search-filter input[type="text"] {
+  margin-left: 71px; }
+/* line 370, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.extended-search .extended-search__desc {
+  margin: 10px 0 20px 0; }
+/* line 374, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.extended-search .btn-primary {
+  font-size: 15px;
+  font-size: 1.5rem; }
+/* line 378, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.extended-search .btn-cancel {
+  position: relative;
+  top: -1px;
+  height: 21px;
+  padding: 4px 10px; }
+/* line 385, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.extended-search .controls .btn, .extended-search .controls button#cboxClose {
+  height: 30px;
+  width: 33px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 20px;
+  font-size: 2rem;
+  color: #666666;
+  border-color: #cccccc;
+  position: relative;
+  top: 3px;
+  left: 4px;
+  margin-right: 3px; }
+/* line 397, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.extended-search .controls .selectBox-dropdown {
+  top: auto;
+  right: auto;
+  height: 9px;
+  margin: 3px 0 0 0;
+  width: 35px !important;
+  line-height: 11px;
+  border-color: #cccccc; }
+/* line 406, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.extended-search .controls .selectBox-arrow {
+  top: 11px; }
+
+/* line 413, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.export-choices {
+  display: none; }
+/* line 416, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_search.scss */
+.export-choices.show-export-options {
+  display: block !important; }
+
+/* Section links and other actions
+------------------------------------------------------------------------------*/
+@media screen and (min-width: 600px) {
+  /* line 3, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_section-links.scss */
+  .col-aside__section {
+    /* MQ Tablet */
+    margin-top: 30px; }
+  /* line 6, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_section-links.scss */
+  .document--drug-profile .col-aside__section {
+    margin-top: 15px; } }
+/* line 11, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_section-links.scss */
+.col-aside__section .section__heading {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px; }
+/* line 16, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_section-links.scss */
+.document--drug-profile .col-aside__section .section__heading {
+  margin: 27px auto 30px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding-bottom: 8px; }
+
+/* line 24, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_section-links.scss */
+.section__list {
+  margin: 0 30px 0 0px;
+  padding: 0;
+  list-style: none; }
+/* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_section-links.scss */
+.section__list li a {
+  background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/action_arrow_right.png) no-repeat 0 9px;
+  display: block;
+  line-height: 1.2;
+  padding: 4px 5px 4px 14px; }
+/* line 32, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_section-links.scss */
+.section__list li a.external:after {
+  margin-top: 4px;
+  position: absolute; }
+
+/* line 39, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_section-links.scss */
+.recent-events__events-list {
+  margin: 20px 0 0 0;
+  padding: 0; }
+/* line 42, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_section-links.scss */
+.recent-events__events-list .recent-events__event {
+  list-style: none;
+  margin-bottom: 20px; }
+/* line 47, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_section-links.scss */
+.recent-events__events-list .recent-events__event-details {
+  margin: 3px 0 0 0;
+  line-height: 20px;
+  color: #666666; }
+
+/* Tabination */
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tabs.scss */
+.tabs {
+  background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 0 white;
+  -moz-box-shadow: inset 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white;
+  border: 1px solid gainsboro; }
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_sticky.scss */
+.csspositionsticky .tabs {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 55px;
+  z-index: 20; }
+@media screen and (min-width: 1025px) {
+  /* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tabs.scss */
+  .tabs {
+    /* MQ Widescreen */ }
+  /* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_sticky.scss */
+  .csspositionsticky .tabs {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 20; } }
+/* line 15, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tabs.scss */
+.tabs .tabs__menu {
+  margin: 0;
+  padding: 0; }
+/* line 19, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tabs.scss */
+.tabs .tabs__menu .tabs__item {
+  border-right: 1px solid gainsboro;
+  display: inline-block;
+  padding: 10px 30px;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  left: -5px; }
+/* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tabs.scss */
+.tabs .tabs__menu .tabs__item:first-child {
+  left: 0; }
+/* line 30, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tabs.scss */
+.tabs .tabs__menu .tabs__item.active {
+  -webkit-box-shadow: inset 0px 3px 7px 0px #d4d4d4;
+  -moz-box-shadow: inset 0px 3px 7px 0px #d4d4d4;
+  box-shadow: inset 0px 3px 7px 0px #d4d4d4;
+  background: none;
+  border-bottom-color: white;
+  color: #666666; }
+
+@media screen and (min-device-width: 320px) {
+  /* MQ Smartphone */
+  /* Tooltip & Help
+  ------------------------------------------------------------------------------*/
+  /* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .tooltip-information {
+    background-color: #FFF;
+    border: 1px solid gainsboro;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.08);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.08);
+    color: #666666;
+    display: none;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-left: -60px;
+    /* half the outer width - 2.5px => for centering */
+    margin-top: -12px;
+    padding: 13px;
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    z-index: 15;
+    /* left 50% is for centering */
+    width: 100px;
+    word-wrap: break-word;
+    text-align: left; }
+  /* line 22, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .data-list--properties-column .tooltip-information {
+    color: #333333;
+    margin-left: -64px;
+    bottom: 31px;
+    top: auto; }
+  /* line 41, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .tooltip-information p {
+    margin: 5px 0;
+    line-height: 19px; }
+
+  /* line 46, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .tooltip-information:before {
+    background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/tooltip_arrow_up.png) no-repeat center top;
+    content: '';
+    display: block;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: -12px;
+    width: 100%; }
+  /* line 54, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .data-list--properties-column .tooltip-information:before, .default-table .tooltip-information:before {
+    display: none; }
+
+  /* line 59, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .tooltip-information:after {
+    background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/tooltip_arrow_down.png) no-repeat center top;
+    content: '';
+    display: block;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    margin-top: 13px;
+    width: 100%; }
+
+  /* help */
+  /* line 70, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .help {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAD0lEQVQImWNgYGD4zwAFAAkEAQAd1+6MAAAAAElFTkSuQmCC") repeat-x left bottom;
+    cursor: help;
+    position: relative; }
+
+  /* line 75, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .help:hover .tooltip-information {
+    display: block; }
+
+  /* line 79, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .js .help:hover .tooltip-information {
+    display: none; } }
+@media screen and (min-device-width: 320px) and (min-width: 1025px) {
+  /* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .tooltip-information {
+    /* MQ Widescreen */
+    margin-left: -127px;
+    /* half the outer width - 2.5px => for centering */
+    margin-top: 0;
+    width: 230px; }
+  /* line 33, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .data-list--properties-column .tooltip-information {
+    width: 200px;
+    margin-left: -115px; }
+  /* line 37, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+  .default-table .tooltip-information {
+    top: -58px; } }
+/* line 84, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+.icon {
+  display: inline;
+  top: 3px;
+  position: relative; }
+/* line 88, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+.icon:hover .tooltip-information {
+  display: block; }
+
+/* line 94, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+.show-tooltip span {
+  border-bottom: 1px dotted #000;
+  position: relative;
+  cursor: pointer; }
+/* line 98, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tooltip-help.scss */
+.show-tooltip span:hover .tooltip-information {
+  display: block; }
+
+/* basics (grey) - essential class for every button, other .btn-* are optional */
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_buttons.scss */
+.btn, button#cboxClose {
+  background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 0 white;
+  -moz-box-shadow: inset 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white;
+  border: 1px solid #bcbcbc;
+  color: #666666;
+  font-size: 13px;
+  font-size: 1.3rem;
+  display: inline-block;
+  height: 21px;
+  line-height: 1.7;
+  padding: 1px 10px 0;
+  white-space: nowrap;
+  cursor: pointer; }
+/* line 18, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_buttons.scss */
+.btn:hover, button#cboxClose:hover, .btn:focus, button#cboxClose:focus, .btn:active, button#cboxClose:active {
+  border-color: #999999;
+  color: #333333;
+  text-decoration: none; }
+/* line 24, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_buttons.scss */
+.btn:active, button#cboxClose:active, .btn.act, button.act#cboxClose {
+  -webkit-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.35); }
+/* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_buttons.scss */
+.ie9 .btn:active, .ie9 button#cboxClose:active {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(direction=0,color=#000000,strength=5);"; }
+
+/* line 32, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_buttons.scss */
+.btn, button#cboxClose {
+  height: 24px;
+  /* needs height including the 2 px for the border */
+  padding-top: 0; }
+
+/* line 37, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_buttons.scss */
+.btn-monster {
+  height: 31px;
+  /* needs height including the 2 px for the border */
+  padding-top: 0; }
+
+/* Primary buttons */
+/* line 43, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_buttons.scss */
+.btn-primary {
+  background: #0176c3 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_blue_38a0e5_0277c4.gif) repeat-x;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#38a0e5), to(#0176c3));
+  background-image: -webkit-linear-gradient(top, #38a0e5, #0176c3);
+  background-image: -moz-linear-gradient(top, #38a0e5, #0176c3);
+  background-image: -ms-linear-gradient(top, #38a0e5, #0176c3);
+  background-image: -o-linear-gradient(top, #38a0e5, #0176c3);
+  background-image: linear-gradient(top, #38a0e5, #0176c3);
+  border-color: #0176c3;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  color: white; }
+/* line 52, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_buttons.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.act {
+  background-color: #0266a8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#38a0e5), to(#0266a8));
+  background-image: -webkit-linear-gradient(top, #38a0e5, #0266a8);
+  background-image: -moz-linear-gradient(top, #38a0e5, #0266a8);
+  background-image: -ms-linear-gradient(top, #38a0e5, #0266a8);
+  background-image: -o-linear-gradient(top, #38a0e5, #0266a8);
+  background-image: linear-gradient(top, #38a0e5, #0266a8);
+  border-color: #0266a8;
+  color: white; }
+
+/* higher buttons in lightboxes */
+/* line 62, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_buttons.scss */
+.facets--facet-expanded .facets-header .btn, .facets--facet-expanded .facets-header button#cboxClose,
+#cboxContent .functions-bar .btn,
+#cboxContent .functions-bar button#cboxClose,
+#reader-buttons .btn,
+#reader-buttons button#cboxClose {
+  height: 25px; }
+
+/* line 67, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_buttons.scss */
+.btn-link,
+.btn-link:hover {
+  border-color: transparent;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+@media screen and (min-device-width: 320px) {
+  /* MQ Smartphone */
+  /* Default tables
+  ------------------------------------------------------------------------------*/
+  /* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table {
+    margin: 34px 0 22px 0;
+    position: relative;
+    overflow-x: auto;
+    width: 100%; }
+  /* line 11, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table table {
+    width: 100%; }
+  /* line 14, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table caption {
+    border: 1px solid #DCDCDC;
+    border-bottom: 1px solid gainsboro;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    -webkit-box-shadow: inset 1px -1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+    -moz-box-shadow: inset 1px -1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+    box-shadow: inset 1px -1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+    color: #666666;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 20px 2.71739130435%;
+    /* Math: 15 / 552 */
+    text-align: left; }
+  /* line 24, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table caption span {
+    color: #999999;
+    display: block;
+    font-size: 13px;
+    font-size: 1.3rem;
+    margin: 7px 0 0 32px; }
+  /* line 37, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table td,
+  .default-table th {
+    border: 1px solid #DCDCDC;
+    color: #666666;
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle; }
+  /* line 44, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table th {
+    background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+    -webkit-box-shadow: inset 1px 1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+    -moz-box-shadow: inset 1px 1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+    box-shadow: inset 1px 1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+    border-top: none;
+    font-weight: bold; }
+  /* line 57, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table td .action {
+    margin-right: 0; }
+  /* line 60, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table td a {
+    font-size: 13px;
+    font-size: 1.3rem; }
+  /* line 63, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table tfoot td {
+    font-size: 11px;
+    font-size: 1.1rem;
+    color: #999999;
+    padding: 9px 15px;
+    border: none; }
+  /* line 69, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table .table-links a {
+    margin: 0 12px 0 12px; }
+  /* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_link-symbol.scss */
+  .default-table .table-links a:before {
+    content: '\00BB\0020';
+    /* raquo + space */ }
+  /* line 73, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table .table-actions-bottom {
+    background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+    border: 1px solid #DADBDB;
+    border-top: none;
+    min-height: 15px;
+    padding: 15px;
+    position: relative; }
+  /* line 81, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table .table-actions-bottom .table-actions {
+    position: absolute;
+    right: 12px;
+    top: 12px; } }
+@media screen and (min-device-width: 320px) and (min-width: 600px) {
+  /* line 24, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table caption span {
+    /* MQ Tablet */
+    display: inline;
+    margin: 0 0 0 12px; } }
+@media screen and (min-device-width: 320px) and (min-width: 600px) {
+  /* line 50, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_tables.scss */
+  .default-table .table-actions {
+    /* MQ Tablet */
+    position: absolute;
+    right: 12px;
+    top: 22px; } }
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_read-more.scss */
+.read-more a, .read-less a {
+  text-decoration: underline; }
+/* line 4, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_read-more.scss */
+.document--drug-profile .layout__col-main .read-more a, .document--drug-profile .layout__col-main .read-less a {
+  font-size: 11px;
+  font-size: 1.1rem; }
+/* line 7, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_read-more.scss */
+.document--drug-profile .layout__col-main .read-more a, .document--drug-profile .layout__col-main .read-less a {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+/* line 13, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_read-more.scss */
+span.details[style="display: inline-block;"] {
+  display: inline !important; }
+
+@media screen and (min-device-width: 320px) {
+  /* MQ Smartphone */
+  /* line 3, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_thumbnail.scss */
+  .thumbnail__link {
+    display: block;
+    position: relative;
+    width: 184px; }
+  /* line 12, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_thumbnail.scss */
+  .thumbnail__link:focus {
+    outline: none; }
+  /* line 16, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_thumbnail.scss */
+  .thumbnail__link:after {
+    background: url(view-icon.png) no-repeat top right;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -1px; }
+
+  /* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_thumbnail.scss */
+  .thumbnail__img {
+    max-width: 184px;
+    border: 1px solid gainsboro;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.08);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.08); } }
+@media screen and (min-device-width: 320px) and (min-width: 1025px) {
+  /* line 3, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_thumbnail.scss */
+  .thumbnail__link {
+    /* MQ Widescreen */
+    width: 220px; } }
+@media screen and (min-device-width: 320px) and (min-width: 1025px) {
+  /* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_thumbnail.scss */
+  .thumbnail__img {
+    /* MQ Widescreen */
+    max-width: 100%; } }
+
+/* line 4, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_accordion.scss */
+.accordion__hd {
+  border: none;
+  color: #0176c3;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin: 0;
+  position: relative; }
+/* line 12, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_accordion.scss */
+.accordion__hd:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 8px; }
+
+/* line 23, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_accordion.scss */
+.accordion__hd--expanded:before {
+  border: 6px solid transparent;
+  border-top: 6px solid #0176c3;
+  width: 0;
+  height: 0; }
+
+/* line 30, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_accordion.scss */
+.accordion__hd--collapsed:before {
+  border: 6px solid transparent;
+  border-left: 6px solid #0176c3;
+  width: 0;
+  height: 0; }
+/* line 33, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_accordion.scss */
+.accordion__hd--collapsed:after {
+  content: "";
+  display: block;
+  margin-bottom: 22px;
+  min-height: 24px;
+  border-bottom: 1px solid #DCDCDA;
+  -webkit-box-shadow: inset 0 1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+  -moz-box-shadow: inset 0 1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+  box-shadow: inset 0 1px 0 0 white, inset 0 -18px 18px -18px #efefef; }
+
+/* line 44, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_accordion.scss */
+.accordion__hd--disabled {
+  color: #999999;
+  cursor: text; }
+/* line 47, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_accordion.scss */
+.accordion__hd--disabled:before {
+  border-left-color: #999999; }
+
+/* line 53, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_accordion.scss */
+.accordion__bd {
+  margin-bottom: 20px;
+  min-height: 20px;
+  border-bottom: 1px solid #DCDCDA;
+  -webkit-box-shadow: inset 0 1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+  -moz-box-shadow: inset 0 1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+  box-shadow: inset 0 1px 0 0 white, inset 0 -18px 18px -18px #efefef; }
+
+/* line 3, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_back-to-top.scss */
+.back-to-top a,
+.back-to-top a:hover {
+  font: 12px arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  width: 34px;
+  height: 31px;
+  background: rgba(56, 160, 229, 0.08) url("/assets/images/arrow-top.png") no-repeat center 10px;
+  border: 1px solid #38a0e5;
+  padding: 20px 10px 10px;
+  position: absolute;
+  right: 40px;
+  bottom: 20px; }
+
+/* line 1, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar {
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1;
+  background: rgba(51, 51, 51, 0.9);
+  position: fixed;
+  bottom: 0;
+  padding: 8px 15px 8px 30px;
+  display: none;
+  width: 655px; }
+/* line 8, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.ie8 .export-bar {
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5333333,endColorstr=#E5333333);"; }
+/* line 12, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar .export-bar__selected-count {
+  font-size: 15px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px 5px 0;
+  margin-right: 10px;
+  border-right: 1px dotted #999999; }
+/* line 21, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar .btn, .export-bar button#cboxClose {
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1;
+  font-size: 15px;
+  font-size: 1.5rem;
+  padding: 0 12px; }
+/* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar .export-bar__btn {
+  background-color: #4c4d51;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#4c4d51));
+  background-image: -webkit-linear-gradient(top, #666666, #4c4d51);
+  background-image: -moz-linear-gradient(top, #666666, #4c4d51);
+  background-image: -ms-linear-gradient(top, #666666, #4c4d51);
+  background-image: -o-linear-gradient(top, #666666, #4c4d51);
+  background-image: linear-gradient(top, #666666, #4c4d51);
+  -webkit-box-shadow: inset -1px 1px 0 #777777;
+  -moz-box-shadow: inset -1px 1px 0 #777777;
+  box-shadow: inset -1px 1px 0 #777777;
+  border: 1px solid #333333;
+  padding: 5px 12px;
+  display: inline;
+  position: relative; }
+/* line 46, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar .export-bar__reset-all {
+  font-size: 15px;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none; }
+/* line 52, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar .export-bar__denormalize-data {
+  padding: 9px 10px 5px;
+  top: 1px;
+  margin-left: 7px; }
+/* line 58, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar .exportOptions-tooltip {
+  background: #52b1e9;
+  border: none;
+  margin-left: 222px;
+  margin-top: -90px;
+  text-align: center;
+  line-height: 20px;
+  width: 135px;
+  color: #fff; }
+/* line 68, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar .exportOptions-tooltip:before {
+  display: none; }
+/* line 72, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar .exportOptions-tooltip:after {
+  background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/arrow_head.png) no-repeat center top; }
+/* line 76, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar .exportOptions-tooltip.show {
+  display: block; }
+
+/* line 81, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar__content {
+  width: 50%;
+  line-height: 31px; }
+
+/* line 85, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.export-bar__properties {
+  text-align: left; }
+
+/* line 90, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.alert-box {
+  display: none; }
+
+/* line 94, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.alert-box__confirm {
+  text-align: center;
+  overflow: hidden; }
+/* line 97, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.alert-box__confirm p {
+  font-family: Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
+  font-size: 22px;
+  color: #000;
+  margin: 20px; }
+/* line 104, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.alert-box__confirm .btn-primary {
+  height: 27px; }
+/* line 108, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.alert-box__confirm span {
+  padding: 0 5px;
+  color: #666666; }
+/* line 113, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_export_bar.scss */
+.alert-box__confirm #cboxClose {
+  position: relative;
+  top: -1px;
+  left: 0;
+  display: inline !important; }
+
+/* line 1, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu {
+  width: 515px;
+  height: 510px;
+  background: #fff;
+  border: 1px solid #cccccc;
+  border-bottom: 1px solid gainsboro;
+  line-height: normal;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.09);
+  position: absolute;
+  left: 200px;
+  bottom: 65px;
+  z-index: 15;
+  display: none; }
+/* line 13, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu:after {
+  background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/tooltip_arrow_down.png) no-repeat 450px top;
+  content: '';
+  display: block;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: 510px;
+  width: 100%; }
+/* line 23, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu.display {
+  display: block !important; }
+/* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__header {
+  background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+  border-bottom: 1px solid #bcbcbc;
+  height: 28px;
+  padding: 5px 10px;
+  position: relative;
+  z-index: 5; }
+/* line 35, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__header .header__title {
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  float: left;
+  margin: 4px 10px 5px; }
+/* line 43, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .btn, .popup-menu button#cboxClose {
+  padding-top: 1px;
+  float: right;
+  font-size: 13px;
+  font-size: 1.3rem; }
+/* line 49, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__heading {
+  text-align: center;
+  color: #000;
+  -webkit-box-shadow: inset 0 -1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+  -moz-box-shadow: inset 0 -1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+  box-shadow: inset 0 -1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+  border-bottom: 1px solid #D7D6D6;
+  padding: 0 4px 7px 0;
+  padding: 20px 0;
+  margin: 0;
+  color: #333333;
+  font-size: 22px;
+  font-size: 2.2rem; }
+/* line 59, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu label {
+  position: relative;
+  top: -2px;
+  left: 5px; }
+/* line 63, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section {
+  margin: 18px 20px;
+  padding-bottom: 10px;
+  zoom: 1;
+  border-bottom: 1px solid gainsboro; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.popup-menu .popup-menu__all-fields-section:before, .popup-menu .popup-menu__all-fields-section:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.popup-menu .popup-menu__all-fields-section:after {
+  clear: both; }
+/* line 69, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section .all-fields-section__select-all-fields {
+  margin: 0; }
+/* line 72, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section .all-fields-section__select-all-fields .select-all-fields__select-all {
+  display: block;
+  position: absolute;
+  margin: -17px 0 0 115px; }
+/* line 79, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section .all-fields-section__properties {
+  margin: 20px 15px 0 20px;
+  padding: 0;
+  list-style: none;
+  float: left; }
+/* line 85, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section .all-fields-section__properties .properties__property {
+  margin: 0 0 16px 0; }
+/* line 88, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section .all-fields-section__properties .properties__property.moa {
+  margin-bottom: 35px; }
+/* line 92, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section .all-fields-section__properties .properties__property.drug-properties label {
+  border-bottom: 1px dotted #333333; }
+/* line 95, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section .all-fields-section__properties .properties__property.drug-properties label .tooltip-information {
+  margin-top: -153px;
+  width: 185px;
+  margin-left: -110px; }
+/* line 100, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section .all-fields-section__properties .properties__property.drug-properties label .tooltip-information p {
+  margin: 0;
+  line-height: 15px; }
+/* line 105, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section .all-fields-section__properties .properties__property.drug-properties label .tooltip-information:before {
+  display: none; }
+/* line 109, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section .all-fields-section__properties .properties__property.drug-properties label .tooltip-information.show {
+  display: block; }
+/* line 114, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__all-fields-section .all-fields-section__properties .properties__property.drug-properties label:hover .tooltip-information {
+  display: block; }
+/* line 122, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_popup-menu.scss */
+.popup-menu .popup-menu__dev-status-section {
+  margin: 0 20px; }
+
+/* line 2, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_show-more.scss */
+.show-more {
+  text-align: center;
+  margin: 25px 0; }
+/* line 6, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_show-more.scss */
+.show-more .pillow-btn--show-more {
+  background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+  padding: 0 30px; }
+/* line 13, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_show-more.scss */
+.show-more .pillow-btn--show-more[disabled], .show-more .pillow-btn--show-more[disabled]:hover, .show-more .pillow-btn--show-more[disabled]:active {
+  background: #f9f9f9 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#eaeaea));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #eaeaea);
+  background-image: -moz-linear-gradient(top, #f9f9f9, #eaeaea);
+  background-image: -ms-linear-gradient(top, #f9f9f9, #eaeaea);
+  background-image: -o-linear-gradient(top, #f9f9f9, #eaeaea);
+  background-image: linear-gradient(top, #f9f9f9, #eaeaea);
+  border: 1px solid #e5e5e5;
+  position: relative;
+  padding-left: 60px; }
+/* line 18, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_show-more.scss */
+.show-more .pillow-btn--show-more[disabled]:before, .show-more .pillow-btn--show-more[disabled]:hover:before, .show-more .pillow-btn--show-more[disabled]:active:before {
+  content: "";
+  display: block;
+  height: 24px;
+  width: 24px;
+  background: url("/assets/images/loader.gif") no-repeat;
+  position: absolute;
+  left: 10px;
+  top: 5px; }
+/* line 29, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/ui_components/_show-more.scss */
+.show-more .pillow-btn--show-more:active {
+  border: 1px solid #bcbcbc;
+  padding: 0 30px; }
+
+/* line 1, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results {
+  margin-bottom: 24px;
+  /* No results found */
+  /* Results page: headline "Refine your search"
+  ------------------------------------------------------------------------------*/
+  /* Results page: facet links in .col-main for removing
+  ------------------------------------------------------------------------------*/
+  /* Results page: results content header
+  ------------------------------------------------------------------------------*/ }
+/* line 4, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .results__no-results-heading {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-top: 16px; }
+/* line 10, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .results__number-of-search-results {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 0; }
+/* line 18, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .layout__col-aside h2 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0; }
+/* line 23, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .layout__col-aside h2.section__heading {
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  padding-bottom: 0; }
+/* line 33, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .layout__col-main .facet-values__link {
+  background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/remove_icons.png) no-repeat right 1px;
+  color: #ee7d11;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-right: 15px;
+  padding-right: 19px;
+  position: relative; }
+/* line 40, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .layout__col-main .facet-values__link:hover {
+  background-position: right -49px; }
+/* line 43, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .layout__col-main .facet-values__link:active {
+  background-position: right -74px;
+  color: #ce4900; }
+/* line 52, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .layout__col-main .results__header {
+  width: 90%;
+  /* Allow RSS/Download CSV icon float to right of .header */ }
+@media screen and (min-width: 600px) {
+  /* line 52, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+  .results .layout__col-main .results__header {
+    /* MQ Tablet */
+    width: 86%; } }
+@media screen and (min-width: 1025px) {
+  /* line 52, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+  .results .layout__col-main .results__header {
+    /* MQ Widescreen */
+    width: 90%; } }
+/* line 56, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .layout__col-main .results__header h1 {
+  line-height: 1.2;
+  margin: 0 0 12px 0; }
+@media screen and (min-width: 600px) {
+  /* line 56, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+  .results .layout__col-main .results__header h1 {
+    /* MQ Tablet */
+    margin: 0 0 7px 0; } }
+/* line 64, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .layout__col-main .results__header h1 strong:first-child {
+  font-size: 18px;
+  font-size: 1.8rem; }
+/* line 68, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .layout__col-main .results__header h1 em {
+  background: #edf5fb;
+  font-style: normal; }
+/* line 74, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .layout__col-main .results__header p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin: 3px 0 12px 0; }
+/* line 83, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .facet-values__value {
+  display: none; }
+/* line 85, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results .facet-values__value.facet-values__value--show {
+  display: list-item; }
+/* line 89, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.facets--facet-expanded .results .facet-values__value {
+  display: list-item; }
+
+/* line 95, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list {
+  margin: 5px 0 0 0;
+  padding: 0;
+  /* list item */
+  /* content type */
+  /* title */
+  /* snippet, subtitle, coverage */
+  /* meta (authors, enumeration) */
+  /* moa, active-dev */
+  /* actions */ }
+/* line 98, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__content-type {
+  font-size: 11px;
+  font-size: 1.1rem; }
+/* line 103, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__list-item {
+  zoom: 1;
+  border-bottom: 1px solid gainsboro;
+  list-style: none;
+  padding: 12px 10px 15px 10px;
+  position: relative;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.results__results-list .results-list__list-item:before, .results__results-list .results-list__list-item:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.results__results-list .results-list__list-item:after {
+  clear: both; }
+/* line 110, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__list-item:hover, .results__results-list .results-list__list-item.active {
+  background-color: #FBFBFB;
+  -webkit-box-shadow: inset 0 1px 0 white, inset 0 -1px 0 white;
+  -moz-box-shadow: inset 0 1px 0 white, inset 0 -1px 0 white;
+  box-shadow: inset 0 1px 0 white, inset 0 -1px 0 white; }
+/* line 115, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__drugs-content .results__results-list .results-list__list-item {
+  min-height: 115px;
+  line-height: 20px;
+  padding-right: 150px;
+  padding-left: 35px; }
+/* line 124, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__content-type {
+  color: #777777;
+  font-size: 11px;
+  font-size: 1.1rem; }
+/* line 127, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__deals-content .results__results-list .results-list__content-type {
+  color: #333333;
+  margin: 5px 0 0 0; }
+/* line 134, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__heading {
+  font-size: 20px;
+  font-size: 2rem;
+  margin: 4px 0 8px; }
+/* line 137, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__drugs-content .results__results-list .results-list__heading {
+  margin-bottom: 0; }
+/* line 140, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__deals-content .results__results-list .results-list__heading {
+  float: left;
+  width: 80%;
+  margin-bottom: 14px; }
+/* line 146, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__heading .export-selector {
+  position: absolute;
+  top: 22px;
+  left: 10px; }
+/* line 151, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__deal-value {
+  font-size: 15px;
+  font-size: 1.5rem;
+  float: right;
+  margin-top: 8px; }
+/* line 156, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__deal-value p {
+  margin: 0; }
+/* line 162, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__snippet {
+  color: #777777;
+  line-height: 1.6;
+  margin: 7px 0 0 0; }
+/* line 166, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__deals-content .results__results-list .results-list__snippet {
+  color: #666666; }
+/* line 172, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__meta {
+  line-height: 1.2;
+  margin-top: 3px; }
+/* line 175, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__meta a {
+  color: #333333; }
+/* line 179, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__deals-content .results__results-list .results-list__meta {
+  line-height: 1.5;
+  clear: both;
+  margin-bottom: 8px; }
+/* line 187, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__moa {
+  font-style: italic;
+  color: #666666; }
+/* line 192, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__active-dev {
+  margin: 15px 0 8px; }
+/* line 196, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__originator {
+  color: #999999;
+  margin: 0; }
+/* line 201, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__drug-phases {
+  position: absolute;
+  right: 20px;
+  top: 20px; }
+/* line 203, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__drug-phases p {
+  margin: 0; }
+/* line 208, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__deal-date {
+  color: #999999; }
+/* line 213, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .results-list__actions {
+  margin-top: 12px; }
+/* line 216, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__results-list .action {
+  margin-right: 0; }
+
+/* line 221, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.pipe {
+  color: #d7d7d7;
+  padding: 0 4px; }
+/* line 224, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.results__deals-content .pipe {
+  color: #333333; }
+
+/* line 229, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_results.scss */
+.hidden {
+  display: none; }
+
+@media screen and (min-device-width: 320px) {
+  /* MQ Smartphone */
+  /*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+  */
+  /* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #colorbox,
+  #cboxOverlay,
+  #cboxWrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    outline: none; }
+
+  /* line 14, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxOverlay {
+    height: 100%;
+    position: fixed;
+    width: 100%; }
+
+  /* line 20, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxMiddleLeft,
+  #cboxBottomLeft {
+    clear: left; }
+
+  /* line 23, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxContent {
+    position: relative; }
+
+  /* line 26, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxLoadedContent {
+    overflow: auto;
+    overflow-x: hidden !important; }
+
+  /* line 30, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxTitle {
+    margin: 0; }
+
+  /* line 34, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxLoadingOverlay,
+  #cboxLoadingGraphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+
+  /* line 41, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxPrevious,
+  #cboxNext,
+  #cboxClose,
+  #cboxSlideshow {
+    cursor: pointer; }
+
+  /* line 44, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  .cboxPhoto {
+    border: 0;
+    display: block;
+    float: left;
+    margin-top: 25px !important; }
+
+  /* line 50, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  .cboxIframe {
+    border: 0;
+    display: block;
+    height: 100%;
+    width: 100%; }
+
+  /* line 57, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #colorbox, #cboxContent, #cboxLoadedContent {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; }
+
+  /*
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+  */
+  /* line 70, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #colorbox,
+  #cboxOverlay,
+  #cboxWrapper {
+    padding-bottom: 20px; }
+
+  /* line 73, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxOverlay {
+    background: #000; }
+
+  /* line 76, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #colorbox {
+    background: #666666;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px !important; }
+
+  /* line 81, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxContent {
+    overflow: visible; }
+
+  /* line 84, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxError {
+    padding: 50px;
+    border: 1px solid #cccccc; }
+
+  /* line 88, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxLoadedContent {
+    background: #FFF;
+    padding: 0; }
+
+  /* line 92, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxLoadingGraphic {
+    background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/loading.gif) no-repeat center center; }
+
+  /* line 95, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxLoadingOverlay {
+    background: #f1f1f1 url(http://adis.dev1.springer-sbm.com:8080/assets/images/bg.png);
+    /* same as body */ }
+
+  /* line 98, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxWrapper {
+    top: 20px !important;
+    left: 20px !important; }
+
+  /* line 101, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxTitle {
+    background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+    background-image: linear-gradient(top, #f8f8f8, #e5e5e5);
+    color: #000;
+    font-size: 13px;
+    font-size: 1.3rem;
+    font-style: italic;
+    position: absolute;
+    left: 10px;
+    bottom: 0; }
+
+  /* line 108, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxCurrent {
+    position: absolute;
+    top: -22px;
+    right: 205px;
+    text-indent: -9999px; }
+
+  /* line 115, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxSlideshow,
+  #cboxPrevious,
+  #cboxNext,
+  #cboxClose {
+    background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/colorbox/controls.png) no-repeat 0 0;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    width: 20px;
+    text-indent: -9999px; }
+
+  /* line 122, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxPrevious {
+    background-position: 0 0;
+    right: 44px; }
+
+  /* line 126, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxPrevious.hover {
+    background-position: 0 -25px; }
+
+  /* line 129, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxNext {
+    background-position: -25px 0;
+    right: 22px; }
+
+  /* line 133, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxNext.hover {
+    background-position: -25px -25px; }
+
+  /* line 136, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxClose {
+    background-position: -50px 0;
+    right: 0; }
+
+  /* line 140, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  #cboxClose.hover {
+    background-position: -50px -25px; }
+
+  /* line 144, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  .cboxSlideshow_on #cboxPrevious,
+  .cboxSlideshow_off #cboxPrevious {
+    right: 66px; }
+
+  /* line 147, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  .cboxSlideshow_on #cboxSlideshow {
+    background-position: -75px -25px;
+    right: 44px; }
+
+  /* line 151, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  .cboxSlideshow_on #cboxSlideshow.hover {
+    background-position: -100px -25px; }
+
+  /* line 154, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  .cboxSlideshow_off #cboxSlideshow {
+    background-position: -100px 0;
+    right: 44px; }
+
+  /* line 158, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+  .cboxSlideshow_off #cboxSlideshow.hover {
+    background-position: -75px -25px; } }
+/* close */
+/* line 165, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+.btn-close:before, button#cboxClose:before {
+  background: url(http://adis.dev1.springer-sbm.com:8080/assets/images/close_icon.png) no-repeat;
+  content: '';
+  display: inline-block;
+  height: 11px;
+  margin: 0 7px -1px 0;
+  width: 11px; }
+
+/* line 174, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+#reader-buttons {
+  height: 26px;
+  padding: 7px;
+  background: #e5e5e5 url(http://adis.dev1.springer-sbm.com:8080/assets/images/grdnt_grey_f8f8f8_e5e5e5.gif) repeat-x;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f8f8f8, #e5e5e5);
+  background-image: linear-gradient(top, #f8f8f8, #e5e5e5); }
+/* line 178, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+.adsorption-db-cbox #reader-buttons {
+  height: auto;
+  zoom: 1; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.adsorption-db-cbox #reader-buttons:before, .adsorption-db-cbox #reader-buttons:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.adsorption-db-cbox #reader-buttons:after {
+  clear: both; }
+
+/* line 184, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+#reader-buttons .right {
+  margin: 0 0 0 7px;
+  float: right; }
+/* line 187, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+.adsorption-db-cbox #reader-buttons .right {
+  margin-top: 9px; }
+
+/* line 192, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+.lightbox_title {
+  margin-left: 45px;
+  margin-right: 20px;
+  font-size: 2em; }
+
+/* line 198, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+.lightbox_subtitle {
+  margin-left: 45px;
+  font-size: 1.4em; }
+
+/* line 203, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+.reader-position {
+  position: absolute;
+  overflow: hidden;
+  top: 25px;
+  bottom: -10px;
+  left: 20px;
+  right: 20px; }
+
+/* line 213, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_lightbox.scss */
+.full_size {
+  text-align: center; }
+
+/* line 1, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.document {
+  font-size: 13px;
+  padding-top: 18px; }
+
+/* line 6, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.document__alt-name {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  display: block;
+  line-height: 22px;
+  word-wrap: break-word;
+}
+
+/* line 13, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.document__latest-update {
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #999999;
+  margin: 0;
+  padding: 0; }
+
+/* line 21, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.document__content {
+  margin: 0 4.25532%; 
+  /*width: 61.7021276596%;*/
+}
+
+/* line 24, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.document__section {
+  margin-top: 30px; }
+/* line 26, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.document--drug-profile .document__section {
+  margin-top: 0; }
+
+/* line 31, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+
+.isSticky,
+.section__heading {
+  -webkit-box-shadow: inset 0 -1px 0 0 white, inset 0 -18px 18px -18px #efefef,0px 3px 2px -2px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0 -1px 0 0 white, inset 0 -18px 18px -18px #efefef,0px 3px 2px -2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 -1px 0 0 white, inset 0 -18px 18px -18px #efefef,0px 3px 2px -2px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #D7D6D6!important;
+  padding: 0 4px 7px 0;
+  margin-bottom: 25px; 
+}
+
+.documentSection h2{  
+  background-color: #fff;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 20px;
+  border-bottom: 1px solid transparent;
+}
+
+
+
+/* line 34, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.document--drug-profile .section__heading {
+  padding-bottom: 20px; 
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+/* line 39, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.section__content {
+  margin-bottom: 10px; }
+
+/* line 43, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.section__footer {
+  border-top: 1px solid #D7D6D6;
+  padding: 0 4px 7px 0; }
+/* line 45, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.section__footer p {
+  text-align: right;
+  color: #777777; }
+
+/* line 51, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.document__additional-content {
+  margin-top: 30px; }
+
+/* line 57, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.additional-content__about .definition-term,
+.additional-content__about .definition-description {
+  float: none;
+  display: block; }
+/* line 62, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.additional-content__about .definition-term {
+  margin-bottom: 5px; }
+
+/* line 67, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+p {
+  font-size: 13px;
+  font-size: 1.3rem; }
+
+@media screen and (min-device-width: 320px) {
+  /* MQ Smartphone */
+  /* line 73, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+  .default-table {
+    margin-top: 17px;
+    margin-bottom: 40px; }
+  /* line 78, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+  .default-table th,
+  .default-table td {
+    padding: 14px; }
+  /* line 82, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+  .default-table th {
+    border-top: 1px solid #DCDCDA;
+    color: #333;
+    -webkit-box-shadow: inset 0 1px 0 0 white;
+    -moz-box-shadow: inset 0 1px 0 0 white;
+    box-shadow: inset 0 1px 0 0 white; }
+  /* line 88, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+  .default-table td {
+    color: #333;
+    vertical-align: top;
+    line-height: 20px;
+    -webkit-box-shadow: inset 0 1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+    -moz-box-shadow: inset 0 1px 0 0 white, inset 0 -18px 18px -18px #efefef;
+    box-shadow: inset 0 1px 0 0 white, inset 0 -18px 18px -18px #efefef; } }
+/* line 98, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.default-table td.cell-empty {
+  text-align: center;
+  vertical-align: middle; }
+
+/* line 104, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+button#cboxClose {
+  top: 7px;
+  right: 10px;
+  height: 27px;
+  text-indent: 0;
+  width: auto; }
+
+/* line 113, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.cboxPhoto {
+  margin-top: 40px !important; }
+
+/* line 119, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.is-sticky {
+  position: fixed; }
+
+/* line 122, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.clearfix {
+  zoom: 1; }
+/* line 5, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+/* line 9, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/mixins/_clearfix.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 125, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.float-left {
+  float: left; }
+
+/* line 128, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.float-right {
+  float: right; }
+
+/* line 131, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/page_specific/_document.scss */
+.align-right {
+  text-align: right; }
+
+@media screen and (min-device-width: 320px) {
+  /* MQ Smartphone */
+  /* line 7, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/plugins_css/_jquery_ui_override.scss */
+  .ui-state-hover,
+  .ui-widget-content .ui-state-hover,
+  .ui-widget-header .ui-state-hover,
+  .ui-state-focus,
+  .ui-widget-content .ui-state-focus,
+  .ui-widget-header .ui-state-focus {
+    background: #e6f1f9;
+    border: 0px;
+    font-weight: normal;
+    color: #212121; }
+
+  /* line 14, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/plugins_css/_jquery_ui_override.scss */
+  .ui-menu .ui-menu-item {
+    list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  /* line 19, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/plugins_css/_jquery_ui_override.scss */
+  .ui-menu .ui-menu-item a {
+    font-size: 16px;
+    padding: 3px 9px;
+    line-height: 16px;
+    color: #666; }
+
+  /* line 28, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/plugins_css/_jquery_ui_override.scss */
+  .ui-autocomplete {
+    border-radius: 0 0 3px 3px;
+    border-top: 0 none;
+    box-shadow: inset 3px -3px 4px rgba(0, 0, 0, 0.08);
+    border-color: #BCBCBC;
+    width: 250px !important; }
+  /* line 36, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/plugins_css/_jquery_ui_override.scss */
+  .ui-autocomplete strong {
+    color: #333; }
+  /* line 44, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/plugins_css/_jquery_ui_override.scss */
+  .extended-search .ui-autocomplete {
+    width: 145px !important; }
+  /* line 57, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/plugins_css/_jquery_ui_override.scss */
+  .ui-widget-content {
+    background-image: none; } }
+@media screen and (min-device-width: 320px) and (min-width: 1025px) {
+  /* line 28, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/plugins_css/_jquery_ui_override.scss */
+  .ui-autocomplete {
+    /* MQ Widescreen */
+    width: 326px !important; } }
+@media screen and (min-device-width: 320px) and (min-width: 600px) {
+  /* line 44, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/plugins_css/_jquery_ui_override.scss */
+  .extended-search .ui-autocomplete {
+    /* MQ Tablet */
+    width: 300px !important; } }
+@media screen and (min-device-width: 320px) and (min-width: 1025px) {
+  /* line 44, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/plugins_css/_jquery_ui_override.scss */
+  .extended-search .ui-autocomplete {
+    /* MQ Widescreen */
+    width: 422px !important; } }
+
+/*** Jump to section prototype ***/
+
+/* Overrides */
+@media screen and (min-device-width: 320px) and (min-width: 1025px) {
+  .csspositionsticky .main-header {
+    position:relative;
+  }
+}
+
+
+/* Jump to section */
+  .col-aside__section{
+    display: none;
+  }
+
+  .section-list--alpha-level {
+    list-style:none;
+    margin:10px;
+    padding-left:0;
+  }
+
+  .section-list--beta-level {
+    margin-top:10px;
+    margin-bottom:30px;
+  }
+
+  .jump-to-section__section-item {
+    margin-bottom:10px;
+  }
+
+  .section-list--beta-level > .jump-to-section__section-item {
+    margin-bottom:0;
+  }
+
+
+@media screen and (min-width: 600px) {
+  .col-aside__section{
+    display: block;
+  }
+}
+
+@media screen and (min-device-width: 320px) and (min-width: 1025px) {
+  .section__jump-to-section {
+    font-size:15px;
+  }
+}
+
+
+
+
+
+
+.showNavigation .main-content{
+  -webkit-transform:translate3d(-100%,0,0);
+  /*left: 70px;  */
+}
+@media screen and (min-width: 600px) {
+  .showNavigation .main-content{    
+    -webkit-transform:translate3d(0,0,0);
+  }
+}
+
+
+
+.documentSection h2{
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+
+  top:47px;
+  z-index: 9;
+}
+
+.documentSection h2._fixed{
+  position: fixed;
+  display: none;
+}
+
+
+
+
+
+
+/*topBar*/
+#topBar{
+  
+  height:auto;
+  width: 100%;
+  margin-left: 0px;
+  z-index: 20;
+  position: fixed;
+  top:0px;
+  overflow: visible;
+  padding: 8px 10px 8px 20px;
+  font-size: 1.6rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+  background-image: linear-gradient(top, #f0f0f0, #e5e5e5);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #e5e5e5);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+
+/*.showNavigation #topBar{
+  -webkit-transform:translate3d(-50%,0,0);
+}
+*/
+@media screen and (min-width: 600px) {
+  .showNavigation #topBar{
+    -webkit-transform:translate3d(0,0,0);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #topBar{
+    width: 980px;
+  }
+}
+
+
+#topBar .documentTitle{
+  font-size: 1.8rem;
+  margin: 0px;
+  float: left;
+  overflow: hidden;
+  min-height: 2.1rem;
+  position: relative;
+}
+
+#topBar .documentTitle .title{
+  float: left;
+  margin-left: 10px;
+  position: relative;
+  top:36px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+#topBar .documentTitle.show .title{
+  top: 7px;
+  opacity: 1;
+  margin-left: 10px;
+}
+
+#topBar .documentTitle .backToTop{
+  width: 30px;
+  height: 30px;
+  background-image: url(Back-to-top.png);
+  float: left;
+}
+
+#topBar .sectionTitle{
+  color:#999;
+}
+
+#topBar .navigationTree{
+  float: right;
+  margin: 0px;
+  /*margin-right: 140px;*/
+  position: relative;
+  padding-left: 17px;
+  position: relative;
+  overflow: hidden;
+  top:1px;
+}
+
+
+
+
+
+
+#topBar .navigationTree button span{
+  position: absolute;
+  right: -99999px;
+}
+
+#topBar .navigationTree button{
+  outline: none;
+  background: url(springer-sprite.png) 0 -1099px no-repeat;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  background-repeat: no-repeat;
+  border-color: gainsboro;
+  min-width: 52px;
+
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+
+
+  border: 1px solid gainsboro;
+  cursor: pointer;
+  display: inline-block;
+  height: 28px;
+  padding: 0 15px;
+}
+
+#navTreeClone{
+  position: fixed;
+  top:0px;
+  bottom: 0px;
+  overflow: auto;
+  z-index: 99;
+  background-color: #fff;
+  background-color: rgba(250,250,250,0.9);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  right:0px;
+  font-size: 1.34rem;
+  width: 100%;
+  -webkit-transform:translate3d(100%,0,0);
+
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;  
+}
+
+.showNavigation #navTreeClone{
+  -webkit-transform:translate3d(0px,0,0);
+}
+
+#navTreeClone .current{
+  font-weight: bold;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+}
+
+@media screen and (min-width: 600px) {
+
+  #topBar .navigationTree button{
+    position: relative;
+    top:36px;
+    color: #0176c3;
+    border: none;
+    background: url('http://link.springer.com/static/0.7298/images/sprites/springer-sprite-s723fd86243.png') 0px -3182px no-repeat;
+    padding: 2px 0px 0px 17px;
+    transition: top 0.3s ease-in-out;
+    outline: none;
+    font-size: 1.5rem;
+  }
+
+  #topBar .navigationTree button span{
+    position:static;
+  }
+
+
+  #topBar .navigationTree.show button{
+    top: 0;
+  }
+
+  #topBar .navigationTree.closed button{
+    background-position: 3px -3128px ;
+  }
+
+  #navTreeClone{
+    display: none;
+    position: absolute;
+    top:51px;
+    bottom: auto;
+    overflow: auto;
+    z-index: 99;
+    background-color: #fff;
+    background-color: rgba(250,250,250,0.9);
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    right:10px;
+    font-size: 1.34rem;
+  }
+
+  .showNavigation #navTreeClone{
+    -webkit-transform:translate3d(0px,0,0);
+    display: block;
+    width: auto;
+  }
+
+  
+}
+
+
