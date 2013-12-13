@@ -13,7 +13,7 @@ $(window).load(function(){
                 $(this.elem).removeClass("headroom--unpinned")
             },
             onUnpinned:function(){
-                if(window.scrollY>700){
+                if(window.scrollY>600){
                     $(this.elem).addClass("headroom--unpinned")
                 }
             }

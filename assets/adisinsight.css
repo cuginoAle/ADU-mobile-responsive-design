@@ -4023,10 +4023,10 @@ button#cboxClose {
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
   border-bottom: 1px solid rgba(0,0,0,0.1);
 
-  -webkit-transition: all 0.25s ease-in-out 0.01s;
+/*  -webkit-transition: all 0.25s ease-in-out 0.01s;
   -moz-transition: all 0.25s ease-in-out 0.01s;
   -o-transition: all 0.25s ease-in-out 0.01s;
-  transition: all 0.25s ease-in-out 0.01s;
+  transition: all 0.25s ease-in-out 0.01s;*/
 }
 
 .headroom--unpinned #topBar{
@@ -4040,14 +4040,24 @@ button#cboxClose {
 
 
 
-/*.showNavigation #topBar{
-  -webkit-transform:translate3d(-50%,0,0);
+.showNavigation #topBar{
+  -webkit-transform:translate3d(0,0,0);
+  top:0px;
 }
-*/
+
 @media screen and (min-width: 600px) {
   .showNavigation #topBar{
     -webkit-transform:translate3d(0,0,0);
   }
+
+  .headroom--unpinned #topBar{
+    top:0px;
+  }  
+
+
+  .headroom--unpinned .documentSection h2{
+    top:47px;
+  }  
 }
 
 @media screen and (min-width: 1025px) {
