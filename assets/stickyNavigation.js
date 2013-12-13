@@ -1,3 +1,26 @@
+$(window).load(function(){
+    var $body=$(document.body)
+
+    $body.headroom({
+        offset:60,
+        tolerance:5,
+        classes:{
+            pinned:null,
+            unpinned:null
+        },
+        events:{
+            onPinned:function(){
+                $(this.elem).removeClass("headroom--unpinned")
+            },
+            onUnpinned:function(){
+                if(window.scrollY>700){
+                    $(this.elem).addClass("headroom--unpinned")
+                }
+            }
+        }
+    });
+});
+
 
 (function(){
     var $body=$(document.body),
@@ -23,7 +46,7 @@
 
 
         fixNavHeight();
-        // due to a known browser bug, resize event can fire more than once
+        // due to a known browser bug, resize event could fire more than once
         var resizeHnd=null;
         $(window).on("resize",function(){
             // fixing the navigation height on window resise

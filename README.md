@@ -1,4 +1,4 @@
 JumpToSection
 =============
 
-this is a jQuery plugin
+<p>this is a jQuery plugin</p>
