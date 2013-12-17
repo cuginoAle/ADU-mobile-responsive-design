@@ -1,6 +1,7 @@
 $(window).load(function(){
     var $body=$(document.body)
-
+    
+    // headroom plugin initialisation
     $body.headroom({
         offset:60,
         tolerance:5,
@@ -22,29 +23,87 @@ $(window).load(function(){
 });
 
 
+
+
 (function(){
     var $body=$(document.body),
         supportsSticky=featureTest( 'position', 'sticky' ),
         topBar=$("#topBar"),
         topBarHeight=topBar.outerHeight(true),
-        documentTitle=topBar.find(".documentTitle"),
-        documentTitleSpan=documentTitle.find("span"),
-        sectionTitle=topBar.find(".sectionTitle"),
-        navigationTree=topBar.find(".navigationTree"),
-        navigationTreeTitle=$(".jump-to-section__nav-title"),
-        navTreeClone=$("<div id='navTreeClone' />")
-            .css("top",topBarHeight)
-            .appendTo(topBar);
 
-        //setting the navigation-treeview click event handler
-        navigationTree
-            .find("button").click(toggleTOC);
+        sectionTitle=topBar.find(".sectionTitle");
+
+    // populating the topBar
+        // document title
+        var documentTitle=topBarHandler.cells.b.addItem($("<p class='documentTitle'><span/></p>")),
+            docTitle=$(".document__title");
+      
+        documentTitle.$el.find("span").text(docTitle.text())
+
+
+        // creating the TOC button
+        var tocButton=topBarHandler.cells.c.addItem($('<button class="tocButton flatButton"><span>Table of contents</span></button>')),
+            tocLabelText=$(".jump-to-section__nav-title").text();
+
+        //setting the tocButton click event handler
+        tocButton.$el.click(toggleTOC);
+
+        tocLabel=topBarHandler.cells.b.addItem($("<p class='tocLabel'><span/></p>").text(tocLabelText));
+
+        // recalculating the tobBar height
+        topBarHeight=topBar.outerHeight(true);
+
+
+        // logic for showing the TOC and the document title
+        docTitle.hotSpot({
+            gone:function(isAbove){
+                if(isAbove){
+                    documentTitle.show()
+                }else{
+                    documentTitle.hide()
+                }
+            },
+            enter:function(){
+                documentTitle.hide()
+            },
+            top:topBarHeight+13
+        });
+
+        // logic for showing the TOC button in the top bar
+        $("#sideNavigation").hotSpot({
+            enter:function(){
+                tocButton.hide();
+                tocButton.$el.addClass("closed");
+
+                $body.removeClass("showNavigation");
+            },
+
+            gone:function(isAbove){
+                if(isAbove){
+                    tocButton.show();
+                }else{
+                    tocButton.hide();
+                    tocButton.$el.addClass("closed");
+
+                    $body.removeClass("showNavigation");             
+                }
+            },
+            top:topBarHeight+10
+        })
+
+
+
+        var navTreeClone=$("<div id='navTreeClone' />")
+                .css("top",topBarHeight)
+                .appendTo(topBar);
+
 
         // $(".main-content").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",function(e){
         //     $(this).
         // })
 
 
+        // TOC clone
         fixNavHeight();
         // due to a known browser bug, resize event could fire more than once
         var resizeHnd=null;
@@ -59,11 +118,11 @@ $(window).load(function(){
 
 
 
-        //scroll-top button
-        documentTitle.find("a").click(function(e){
-            e.preventDefault();
-            $("html,body").animate({"scrollTop":0},800);
-        })
+        // //scroll-top button
+        // documentTitle.find("a").click(function(e){
+        //     e.preventDefault();
+        //     $("html,body").animate({"scrollTop":0},800);
+        // })
 
         // animating the scroll on menu click
         $("#sideNavigation").children("ul")
@@ -80,21 +139,6 @@ $(window).load(function(){
             .appendTo(navTreeClone);
 
 
-
-
-    // toggling the document title
-    var docTitleText=$(".document__title")
-            .hotSpot({
-                leave:function(isAbove){
-                    documentTitle.toggleClass("show",isAbove)
-                },
-                enter:function(){
-                    documentTitle.removeClass("show")
-                },
-                top:topBarHeight+13
-            })
-            .text();
-    documentTitleSpan.text(docTitleText);
 
 
 
@@ -138,7 +182,7 @@ $(window).load(function(){
             // highlighting the current section on the nav menu
             navTreeClone.find("a[href='#" + this.attr("id") + "']").addClass("current")
         },
-        leave:function(){
+        gone:function(){
             var h2=this.find("h2:first")
                 .removeClass("isSticky")
 
@@ -153,31 +197,16 @@ $(window).load(function(){
 
 
 
-    // showing the TOC button on the top bar
-    $("#sideNavigation").hotSpot({
-        enter:function(){
-            navigationTree.removeClass("show");
-            navigationTree.addClass("closed")
-            $body.removeClass("showNavigation");
-        },
-
-        leave:function(isAbove){
-            if(isAbove){
-                navigationTree.addClass("show");
-            }else{
-                navigationTree.removeClass("show");
-                navigationTree.addClass("closed")
-                $body.removeClass("showNavigation");                
-            }
-        },
-        top:topBarHeight+10
-    })
-
-
     // helpers func.
     function toggleTOC(){
-        navigationTree.toggleClass("closed");
+        tocButton.$el.toggleClass("closed");
         $body.toggleClass("showNavigation");
+
+        if(tocLabel.$el.hasClass("show")){
+            documentTitle.show();
+        }else{
+            tocLabel.show();
+        }
     }
 
     function fixNavHeight(){

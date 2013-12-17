@@ -3916,7 +3916,39 @@ button#cboxClose {
     /* MQ Widescreen */
     width: 422px !important; } }
 
+
+
+
+
+
+
 /*** Jump to section prototype ***/
+
+.flatButton{
+  outline: none;
+
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  background-repeat: no-repeat;
+  border-color: gainsboro;
+  min-width: 52px;
+
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+
+
+  border: 1px solid gainsboro;
+  cursor: pointer;
+  display: inline-block;
+  height: 28px;
+  padding: 0 15px;  
+}
 
 /* Overrides */
 @media screen and (min-device-width: 320px) and (min-width: 1025px) {
@@ -3987,7 +4019,7 @@ button#cboxClose {
   position: -o-sticky;
   position: sticky;
 
-  top:47px;
+  top:37px;
   z-index: 9;
 }
 
@@ -4003,6 +4035,8 @@ button#cboxClose {
 
 /*topBar*/
 #topBar{
+
+  display: table;
   
   height:auto;
   width: 100%;
@@ -4011,7 +4045,11 @@ button#cboxClose {
   position: fixed;
   top:0px;
   overflow: visible;
+  
+
   padding: 8px 10px 8px 20px;
+  padding:0px;
+
   font-size: 1.6rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4023,11 +4061,33 @@ button#cboxClose {
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
   border-bottom: 1px solid rgba(0,0,0,0.1);
 
+}
+#topBar>.content{
+  display: table-row;
+}
+
+#topBar .topBar__cell{
+  display: table-cell;
+  overflow: hidden;
+  margin: 0px;
+  padding:0px; 
+  position: relative;
+  vertical-align: middle;
+}
+
+#topBar .cellItem{
   -webkit-transition: all 0.25s ease-in-out 0.01s;
   -moz-transition: all 0.25s ease-in-out 0.01s;
   -o-transition: all 0.25s ease-in-out 0.01s;
   transition: all 0.25s ease-in-out 0.01s;
+  margin: 5px;
+  white-space: nowrap;
 }
+
+#topBar .cell_b{
+  width: 100%
+}
+
 
 .headroom--unpinned #topBar{
   top:-60px;
@@ -4046,6 +4106,13 @@ button#cboxClose {
   .showNavigation #topBar{
     -webkit-transform:translate3d(0,0,0);
   }
+  .headroom--unpinned #topBar{
+    top:0px;
+  }  
+
+  .headroom--unpinned .documentSection h2{
+    top:37px;
+  }  
 }
 
 @media screen and (min-width: 1025px) {
@@ -4057,11 +4124,9 @@ button#cboxClose {
 
 #topBar .documentTitle{
   font-size: 1.8rem;
-  margin: 0px;
-  float: left;
-  overflow: hidden;
+  margin: 5px;
   min-height: 2.1rem;
-  position: relative;
+  position: absolute;
 }
 
 #topBar .documentTitle .title{
@@ -4106,35 +4171,14 @@ button#cboxClose {
 
 
 
-#topBar .navigationTree button span{
+#topBar .tocButton span{
   position: absolute;
   right: -99999px;
 }
 
-#topBar .navigationTree button{
-  outline: none;
+#topBar .tocButton{
+  background-color: #e5e5e5;
   background: url(springer-sprite.png) 0 -1099px no-repeat;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-  background-repeat: no-repeat;
-  border-color: gainsboro;
-  min-width: 52px;
-
-
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-
-
-  border: 1px solid gainsboro;
-  cursor: pointer;
-  display: inline-block;
-  height: 28px;
-  padding: 0 15px;
 }
 
 #navTreeClone{
@@ -4171,19 +4215,18 @@ button#cboxClose {
 
 @media screen and (min-width: 600px) {
 
-  #topBar .navigationTree button{
-    position: relative;
-    top:36px;
+  #topBar .tocButton{
+    box-shadow: none;
     color: #0176c3;
     border: none;
     background: url('http://link.springer.com/static/0.7298/images/sprites/springer-sprite-s723fd86243.png') 0px -3182px no-repeat;
     padding: 2px 0px 0px 17px;
-    transition: top 0.3s ease-in-out;
+
     outline: none;
     font-size: 1.5rem;
   }
 
-  #topBar .navigationTree button span{
+  #topBar .tocButton span{
     position:static;
   }
 
@@ -4223,3 +4266,27 @@ button#cboxClose {
   
 }
 
+
+
+
+/*document__TocLink*/
+#document__TocLink{
+  float: right;
+  padding-left: 36px;
+  background: #e5e5e5 url(springer-sprite.png) -8px -1098px no-repeat;
+  text-decoration: none;
+}
+
+#document__TocLink span{
+  display: block;
+  line-height: 2.9rem;
+  background-position: -8px -1099px;
+  color:#666;
+}
+
+@media screen and (min-width: 600px) {
+  #document__TocLink{
+    display: none;
+  }
+
+}

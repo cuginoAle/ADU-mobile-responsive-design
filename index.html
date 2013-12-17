@@ -13,10 +13,11 @@
 <style type="text/css"></style></head>
 <body style="">
     <div class="container">
+        
         <div id="topBar">
-            <p class="documentTitle"><a href="#" class="backToTop"></a><span class="title"></span></p>
-            <p class="navigationTree closed"><button><span>Table of contents</span></button></p>
+            <div class="content"></div>
         </div>
+
         <div class="main-header" role="banner">
             <h1>
                 <a id="logo" href="http://adis.dev1.springer-sbm.com:8080/">
@@ -59,14 +60,22 @@
             <div class="document document--drug-profile">
                 <div class="layout-3">
                     <div class="layout__col-main document__title__section" role="main">
+
                         <div class="document__enumeration">
                             <div class="publication-title">
                                 <span>Drug Profile</span>
                             </div>
                         </div>
+
+                        <!-- TOC -->
+                        <a id="document__TocLink" class="flatButton" href="#sideNavigation" title="Show the Table of contents" class="document__TOC"><span>Contents</span></a>
+                        <!--  -->
+
                         <h1 class="document__title">
                             Terazosin
                         </h1>
+
+
                         <span class="document__alt-name">
                             <strong>Alternate Names:</strong>
                             A 45975;Blavin;Flotrin<sup>®</sup>;Heitrin<sup>®</sup>;Hitrin<sup>®</sup>;Hyron<sup>®</sup>;Hytracin<sup>®</sup>;Hytrin<sup>®</sup>;Hytrinex;Isontyn;Itrin;MY 208;Sinalfa;Teraprost;Urodie;Vasocard;Vasomet<sup>®</sup>
@@ -772,7 +781,8 @@
                     <!-- navigation prototype -->
                     <script src="./assets/requestAnimationFrame.js" type="text/javascript"></script>
                     <script src="./assets/headroom.js" type="text/javascript"></script>
-                    <script src="./assets/jquery.hotSpotOld.js" type="text/javascript"></script>
+                    <script src="./assets/jquery.hotSpot.js" type="text/javascript"></script>
+                    <script src="./assets/topBarHandler.js" type="text/javascript"></script>
                     <script src="./assets/stickyNavigation.js" type="text/javascript"></script>
 
                     

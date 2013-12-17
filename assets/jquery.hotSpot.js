@@ -38,7 +38,7 @@
             $(window)
                 .on("scroll touchmove resize",function(e){
                     that.hotSpotCheck(that.element);
-                    console.log(e.type)
+                    // console.log(e.type)
                 })
             
 
