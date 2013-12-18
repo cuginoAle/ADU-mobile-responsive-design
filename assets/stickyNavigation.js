@@ -50,7 +50,8 @@ $(window).load(function(){
         $("#document__TocLink").click(function(e){
             e.preventDefault();
             $("html,body").scrollTop($(this).offset().top);
-            toggleTOC();
+            setTimeout(toggleTOC,10)
+            // toggleTOC();
         });
 
         tocLabel=topBarHandler.cells.b.addItem($("<p class='tocLabel'><span/></p>").text(tocLabelText));
