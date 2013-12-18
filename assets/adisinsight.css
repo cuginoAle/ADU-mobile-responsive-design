@@ -666,7 +666,7 @@ dl dd {
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
   /* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
   #logo {
-    background-image: url(http://adis.dev1.springer-sbm.com:8080/assets/images/Adis_Universe_logo_high_res_sprite.png);
+    background-image: url(Adis_Universe_logo_high_res_sprite.png);
     background-size: auto 92px; } }
 @media screen and (min-width: 600px) {
   /* line 27, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_main-header.scss */
@@ -3998,16 +3998,30 @@ button#cboxClose {
 
 
 
-
+.showNavigation{
+  /*to prevent the body from scrolling when the TOC is displayed*/
+  overflow: hidden;   
+}
 
 .showNavigation .main-content{
   -webkit-transform:translate3d(-100%,0,0);
   /*left: 70px;  */
 }
+
+.showNavigation .main-header{
+  display: none;
+}
 @media screen and (min-width: 600px) {
+  .showNavigation{
+    overflow: visible;
+  }
   .showNavigation .main-content{    
     -webkit-transform:translate3d(0,0,0);
   }
+
+  .showNavigation .main-header{
+    display: block;
+  }  
 }
 
 
@@ -4037,7 +4051,7 @@ button#cboxClose {
 #topBar{
 
   display: table;
-  
+  min-height: 39px;
   height:auto;
   width: 100%;
   margin-left: 0px;
@@ -4061,6 +4075,11 @@ button#cboxClose {
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
   border-bottom: 1px solid rgba(0,0,0,0.1);
 
+  -webkit-transition: top 0.3s ease-in-out;
+  -moz-transition: top 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out;
+
 }
 #topBar>.content{
   display: table-row;
@@ -4076,10 +4095,10 @@ button#cboxClose {
 }
 
 #topBar .cellItem{
-  -webkit-transition: all 0.25s ease-in-out 0.01s;
-  -moz-transition: all 0.25s ease-in-out 0.01s;
-  -o-transition: all 0.25s ease-in-out 0.01s;
-  transition: all 0.25s ease-in-out 0.01s;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out 0.01s;
+  -moz-transition: -moz-transform 0.25s ease-in-out 0.01s;
+  -o-transition: -o-transform 0.25s ease-in-out 0.01s;
+  transition: transform 0.25s ease-in-out 0.01s;
   margin: 5px;
   white-space: nowrap;
 }
@@ -4193,12 +4212,16 @@ button#cboxClose {
   font-size: 1.6rem;
   width: 100%;
   -webkit-transform:translate3d(100%,0,0);
+  -moz-transform:translate3d(100%,0,0);
+  -o-transform:translate3d(100%,0,0);
+  transform:translate3d(100%,0,0);
 
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;  
+  -webkit-transition: -webkit-transform 0.25s ease-in-out 0.01s;
+  -moz-transition: -moz-transform 0.25s ease-in-out 0.01s;
+  -o-transition: -o-transform 0.25s ease-in-out 0.01s;
+  transition: transform 0.25s ease-in-out 0.01s;
 }
+
 
 #navTreeClone a{
   color:#eee;
@@ -4206,6 +4229,9 @@ button#cboxClose {
 
 .showNavigation #navTreeClone{
   -webkit-transform:translate3d(0px,0,0);
+  -moz-transform:translate3d(0px,0,0);
+  -o-transform:translate3d(0px,0,0);
+  transform:translate3d(0px,0,0);
 }
 
 #navTreeClone .current{
@@ -4219,7 +4245,7 @@ button#cboxClose {
     box-shadow: none;
     color: #0176c3;
     border: none;
-    background: url('http://link.springer.com/static/0.7298/images/sprites/springer-sprite-s723fd86243.png') 0px -3182px no-repeat;
+    background: url('http://link.springer.com/static/0.7298/images/sprites/springer-sprite-s723fd86243.png') 3px -3128px no-repeat;
     padding: 2px 0px 0px 17px;
 
     outline: none;
@@ -4235,8 +4261,8 @@ button#cboxClose {
     top: 0;
   }
 
-  #topBar .navigationTree.closed button{
-    background-position: 3px -3128px ;
+  #topBar .tocButton.closed{
+    background-position: 0px -3182px;
   }
 
   #navTreeClone{
@@ -4275,6 +4301,7 @@ button#cboxClose {
   padding-left: 36px;
   background: #e5e5e5 url(springer-sprite.png) -8px -1098px no-repeat;
   text-decoration: none;
+  margin-top: 8px;
 }
 
 #document__TocLink span{

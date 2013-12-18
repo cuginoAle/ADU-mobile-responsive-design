@@ -27,10 +27,16 @@
                     .appendTo(parent);
 
         this.addItem=function(item){
+            var topBarCellHeight=topBar.outerHeight(true);
             var $item=$(item)
                         .addClass("cellItem")
-                        .css("transform","translate3d(0,"+ topBarCellHeight +"px,0)");
+                        .css({
+                            "transform":"translate3d(0,"+ topBarCellHeight +"px,0)",
+                            "display":"none"
+                        });
+
                 that.$el.append($item);
+                $item.css("display","block");
 
             return {
                 show:function(){

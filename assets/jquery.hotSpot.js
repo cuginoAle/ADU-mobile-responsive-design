@@ -53,9 +53,13 @@
 
 
         hotSpotCheck: function(element){
-            var scroll_top = $(window).scrollTop() // our current vertical position from the top
 
-            var $this=$(element),
+            var $this=$(element);
+            if(!$this.is(":visible")){
+                return false;
+            }
+
+            var scroll_top = $(window).scrollTop(), // our current vertical position from the top
                 that    = this,
                 elTop   = $this.offset().top,
                 elBottom= elTop+$this.outerHeight(false),

@@ -2,24 +2,24 @@ $(window).load(function(){
     var $body=$(document.body)
     
     // headroom plugin initialisation
-    $body.headroom({
-        offset:60,
-        tolerance:5,
-        classes:{
-            pinned:null,
-            unpinned:null
-        },
-        events:{
-            onPinned:function(){
-                $(this.elem).removeClass("headroom--unpinned")
-            },
-            onUnpinned:function(){
-                if(window.scrollY>600){
-                    $(this.elem).addClass("headroom--unpinned")
-                }
-            }
-        }
-    });
+    // $body.headroom({
+    //     offset:60,
+    //     tolerance:5,
+    //     classes:{
+    //         pinned:null,
+    //         unpinned:null
+    //     },
+    //     events:{
+    //         onPinned:function(){
+    //             $(this.elem).removeClass("headroom--unpinned")
+    //         },
+    //         onUnpinned:function(){
+    //             if(window.scrollY>600){
+    //                 $(this.elem).addClass("headroom--unpinned")
+    //             }
+    //         }
+    //     }
+    // });
 });
 
 
@@ -47,6 +47,11 @@ $(window).load(function(){
 
         //setting the tocButton click event handler
         tocButton.$el.click(toggleTOC);
+        $("#document__TocLink").click(function(e){
+            e.preventDefault();
+            $("html,body").scrollTop($(this).offset().top);
+            toggleTOC();
+        });
 
         tocLabel=topBarHandler.cells.b.addItem($("<p class='tocLabel'><span/></p>").text(tocLabelText));
 
@@ -54,13 +59,13 @@ $(window).load(function(){
         topBarHeight=topBar.outerHeight(true);
 
 
-        // logic for showing the TOC and the document title
+        // logic for showing the document title
         docTitle.hotSpot({
             gone:function(isAbove){
                 if(isAbove){
-                    documentTitle.show()
+                    documentTitle.show();
                 }else{
-                    documentTitle.hide()
+                    documentTitle.hide();
                 }
             },
             enter:function(){
@@ -70,32 +75,28 @@ $(window).load(function(){
         });
 
         // logic for showing the TOC button in the top bar
-        $("#sideNavigation").hotSpot({
+        $("#sideNavigation, #document__TocLink").hotSpot({
             enter:function(){
-                tocButton.hide();
-                tocButton.$el.addClass("closed");
-
-                $body.removeClass("showNavigation");
+                hideTOCbutton();
             },
 
             gone:function(isAbove){
                 if(isAbove){
-                    tocButton.show();
+                    showTOCbutton();
                 }else{
-                    tocButton.hide();
-                    tocButton.$el.addClass("closed");
-
-                    $body.removeClass("showNavigation");             
+                    hideTOCbutton();           
                 }
             },
-            top:topBarHeight+10
+            top:topBarHeight+13
         })
 
 
 
-        var navTreeClone=$("<div id='navTreeClone' />")
+        var navTreeClone=$("<div id='navTreeClone'></div>")
                 .css("top",topBarHeight)
-                .appendTo(topBar);
+                .appendTo(topBar)
+
+
 
 
         // $(".main-content").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",function(e){
@@ -103,8 +104,6 @@ $(window).load(function(){
         // })
 
 
-        // TOC clone
-        fixNavHeight();
         // due to a known browser bug, resize event could fire more than once
         var resizeHnd=null;
         $(window).on("resize",function(){
@@ -202,6 +201,11 @@ $(window).load(function(){
         tocButton.$el.toggleClass("closed");
         $body.toggleClass("showNavigation");
 
+        if($body.hasClass("showNavigation")){
+            // TOC clone
+            fixNavHeight();            
+        }
+
         if(tocLabel.$el.hasClass("show")){
             documentTitle.show();
         }else{
@@ -209,11 +213,22 @@ $(window).load(function(){
         }
     }
 
+    function showTOCbutton(){
+        tocButton.show();
+    }
+
+    function hideTOCbutton(){
+        tocButton.hide();
+        tocButton.$el.addClass("closed");
+
+        $body.removeClass("showNavigation");          
+    }
+
     function fixNavHeight(){
+        navTreeClone.height("auto").scrollTop(0);
+
         if(navTreeClone.outerHeight()>document.documentElement.clientHeight-topBarHeight){
             navTreeClone.height(document.documentElement.clientHeight-topBarHeight)        
-        }else{
-            navTreeClone.height("auto")
         }
     }
 
