@@ -4027,6 +4027,7 @@ button#cboxClose {
   /*to prevent the body from scrolling when the TOC is displayed*/
   overflow: hidden;  
   position: relative; 
+
 }
 
 .showNavigation .main-content{

@@ -143,14 +143,18 @@ $(window).load(function(){
 
                 if(device=="mobile"){
                     toggleTOC();
-                    tbHeight=0;
                 }
                 var $this=this,
+                    that=this,
                     targetTop=$(this.hash).offset().top-tbHeight;
                     //fixing the scroll-top issue (when sticky elements are employed in the page)
 
                     if(device=="mobile"){
+
                         setTimeout(function(){
+                            if(targetTop>$(window).scrollTop()){
+                                targetTop=$(that.hash).offset().top
+                            }
                             $("html,body").animate({"scrollTop":targetTop},500);
                         },300)
                     }else{
