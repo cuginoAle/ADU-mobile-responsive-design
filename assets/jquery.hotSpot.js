@@ -37,12 +37,15 @@
                 doCheck=new deBouncer(100);
 
             $(window)
-                .on("scroll resize touchmove",function(){
-                    doCheck.execute(function(){
+                .on("scroll resize",function(e){
+                    doCheck.execute(function(e){
                         that.hotSpotCheck(that.element);                        
-                    })
+                    },e)
                 })
-            
+                .on("touchmove",function(e){
+                    // this is because setTimeout gets paused on IOS while scrolling
+                    that.hotSpotCheck(that.element);   
+                })
 
             // running the function on page load
             $(window).load(

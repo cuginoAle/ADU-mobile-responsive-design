@@ -33,6 +33,14 @@ $(window).load(function(){
 
         sectionTitle=topBar.find(".sectionTitle");
 
+
+
+        // media query helper to make JS aware of the current MQ
+        // $("#mqHelper").on("mqChange",function(e,device){
+        //     console.log(device)
+        // })
+
+
     // populating the topBar
         // document title
         var documentTitle=topBarHandler.cells.b.addItem($("<p class='documentTitle'><span/></p>")),
@@ -46,7 +54,7 @@ $(window).load(function(){
 
 
         // creating the TOC button
-        var tocButton=topBarHandler.cells.c.addItem($('<button class="tocButton flatButton"><span>Table of contents</span></button>')),
+        var tocButton=topBarHandler.cells.c.addItem($('<button class="tocButton flatButton closed"><span>Table of contents</span></button>')),
             tocLabelText=$(".jump-to-section__nav-title").text();
 
         //setting the tocButton click event handler
@@ -130,11 +138,24 @@ $(window).load(function(){
         $("#sideNavigation").children("ul")
             .on("click","a",function(e){
                 e.preventDefault();
+                var tbHeight=topBar.outerHeight(true),
+                    device=$body.getDevice();
+
+                if(device=="mobile"){
+                    toggleTOC();
+                    tbHeight=0;
+                }
                 var $this=this,
-                    targetTop=$(this.hash).offset().top-topBar.outerHeight(true);
+                    targetTop=$(this.hash).offset().top-tbHeight;
                     //fixing the scroll-top issue (when sticky elements are employed in the page)
-                
-                $("html,body").animate({"scrollTop":targetTop},500);
+
+                    if(device=="mobile"){
+                        setTimeout(function(){
+                            $("html,body").animate({"scrollTop":targetTop},500);
+                        },300)
+                    }else{
+                        $("html,body").animate({"scrollTop":targetTop},500);                        
+                    }
 
             })
             .clone(true)
@@ -200,9 +221,9 @@ $(window).load(function(){
 
 
     // helpers func.
-    function toggleTOC(){
-        tocButton.$el.toggleClass("closed");
-        $body.toggleClass("showNavigation");
+    function toggleTOC(status){
+        tocButton.$el.toggleClass("closed",status);
+        $body.toggleClass("showNavigation",status);
 
         if($body.hasClass("showNavigation")){
             // TOC clone
@@ -211,7 +232,9 @@ $(window).load(function(){
         if(tocLabel.$el.hasClass("show")){
             documentTitle.show();
         }else{
-            tocLabel.show();
+            if($body.getDevice()=="mobile"){
+                tocLabel.show();                
+            }
         }
     }
 

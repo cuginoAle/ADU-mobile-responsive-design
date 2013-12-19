@@ -431,7 +431,7 @@ h1 {
   font-size: 26px;
   font-size: 2.6rem;
   margin: 7px 0 14px; }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
   /* line 21, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
   h1 {
     /* MQ Tablet */
@@ -3931,7 +3931,7 @@ button#cboxClose {
     height: 0px;
     width: 0px;
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1200px) {
     #mqHelper{
       height: 1px;
     }
@@ -4007,7 +4007,7 @@ button#cboxClose {
   }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
   .col-aside__section{
     display: block;
   }
@@ -4022,9 +4022,11 @@ button#cboxClose {
 
 
 
+
 .showNavigation{
   /*to prevent the body from scrolling when the TOC is displayed*/
-  overflow: hidden;   
+  overflow: hidden;  
+  position: relative; 
 }
 
 .showNavigation .main-content{
@@ -4035,7 +4037,7 @@ button#cboxClose {
 .showNavigation .main-header{
   display: none;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
   .showNavigation{
     overflow: visible;
   }
@@ -4145,7 +4147,7 @@ button#cboxClose {
   top:0px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
   .showNavigation #topBar{
     -webkit-transform:translate3d(0,0,0);
   }
@@ -4168,19 +4170,20 @@ button#cboxClose {
 #topBar .documentTitle{
   font-size: 1.8rem;
   margin: 5px;
+  margin-top: 9px;
   min-height: 2.1rem;
 }
 
-#topBar .documentTitle .title{
+/*#topBar .documentTitle .title{
   float: left;
   margin-left: 10px;
   position: relative;
   top:36px;
   transition: all 0.3s ease-in-out;
   opacity: 0;
-}
+}*/
 
-#topBar .documentTitle.show .title{
+/*#topBar .documentTitle.show .title{
   top: 7px;
   opacity: 1;
   margin-left: 10px;
@@ -4191,11 +4194,11 @@ button#cboxClose {
   height: 30px;
   background-image: url(Back-to-top.png);
   float: left;
-}
+}*/
 
-#topBar .sectionTitle{
+/*#topBar .sectionTitle{
   color:#999;
-}
+}*/
 
 #topBar .navigationTree{
   float: right;
@@ -4210,6 +4213,11 @@ button#cboxClose {
 
 #topBar .tocLabel{
   margin: 0px;
+  font-size: 1.8rem;
+  margin: 5px;
+  margin-top: 9px;
+  font-style: italic;
+  color: #666;
 }
 
 
@@ -4265,13 +4273,13 @@ button#cboxClose {
   text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
 
   #topBar .tocButton{
     box-shadow: none;
     color: #0176c3;
     border: none;
-    background: url('http://link.springer.com/static/0.7298/images/sprites/springer-sprite-s723fd86243.png') 3px -3128px no-repeat;
+    background: url('http://link.springer.com/static/0.7298/images/sprites/springer-sprite-s723fd86243.png') 0px -3182px no-repeat;
     padding: 2px 0px 0px 17px;
 
     outline: none;
@@ -4288,7 +4296,7 @@ button#cboxClose {
   }
 
   #topBar .tocButton.closed{
-    background-position: 0px -3182px;
+    background-position: 3px -3128px;
   }
 
   #navTreeClone{
@@ -4337,7 +4345,7 @@ button#cboxClose {
   color:#666;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
   #document__TocLink{
     display: none;
   }
