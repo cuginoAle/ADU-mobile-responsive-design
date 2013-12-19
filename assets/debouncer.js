@@ -11,15 +11,27 @@
 
 
 var deBouncer=function(interval){
-    var timerHnd=null;
+    var timerHnd=null,
+        isFirst=true,
+        isFirstHnd=null;
+
         return {
             execute:function(fn,e){
-                if(timerHnd==null){
-                    timerHnd=setTimeout(function(){
+                if(isFirst && timerHnd==null){
+                    fn(e);
+                    isFirst=false;
+                }else{
+                    if(timerHnd==null){
+                        timerHnd=setTimeout(function(){
+                            fn(e);  
+                            timerHnd=null;   
 
-                        fn(e);  
-                        timerHnd=null;                     
-                    },interval)
+                            clearTimeout(isFirstHnd);
+                            isFirstHnd=setTimeout(function(){
+                                isFirst=true;                                               
+                            },interval)   
+                        },interval)
+                    }
                 }
             }
         }

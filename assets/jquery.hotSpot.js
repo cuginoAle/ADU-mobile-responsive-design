@@ -34,7 +34,7 @@
 
         init: function() {
             var that=this,
-                doCheck=new deBouncer(200);
+                doCheck=new deBouncer(100);
 
             $(window)
                 .on("scroll resize touchmove",function(){

@@ -54,8 +54,8 @@ $(window).load(function(){
         $("#document__TocLink").click(function(e){
             e.preventDefault();
             $("html,body").scrollTop($(this).offset().top);
-            setTimeout(toggleTOC,10)
-            // toggleTOC();
+            // giving the browser time to scroll
+            setTimeout(toggleTOC,80)
         });
 
         tocLabel=topBarHandler.cells.b.addItem($("<p class='tocLabel'><span/></p>").text(tocLabelText));
@@ -208,7 +208,6 @@ $(window).load(function(){
             // TOC clone
             fixNavHeight();            
         }
-
         if(tocLabel.$el.hasClass("show")){
             documentTitle.show();
         }else{
