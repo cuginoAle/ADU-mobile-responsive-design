@@ -33,12 +33,14 @@
     Plugin.prototype = {
 
         init: function() {
-            var that=this;          
+            var that=this,
+                doCheck=new deBouncer(200);
 
             $(window)
-                .on("scroll touchmove resize",function(e){
-                    that.hotSpotCheck(that.element);
-                    // console.log(e.type)
+                .on("scroll resize touchmove",function(){
+                    doCheck.execute(function(){
+                        that.hotSpotCheck(that.element);                        
+                    })
                 })
             
 
@@ -193,21 +195,24 @@
 
             if (!_plugin) {
 
-                var tmpOptions = $.extend( {}, defaults, options);
-                //showing the red line for visual feedback
-                var HSL=$("<div/>")
-                    .css({
-                        display:tmpOptions.debugMode?"block":"none",
-                        position:"fixed",
-                        left:"0px",
-                        width:"100%",
-                        height:(tmpOptions.thickness||1) + "px",
-                        top:tmpOptions.top,
-                        "background-color":"rgba(255,0,0,0.6)",
-                        "z-index":99999
-                    })
 
-                options.HSL=HSL.appendTo(document.body);                                
+                var tmpOptions = $.extend( {}, defaults, options);
+                if(tmpOptions.debugMode){
+                    //showing the red line for visual feedback
+                    var HSL=$("<div/>")
+                        .css({
+                            display:tmpOptions.debugMode?"block":"none",
+                            position:"fixed",
+                            left:"0px",
+                            width:"100%",
+                            height:(tmpOptions.thickness||1) + "px",
+                            top:tmpOptions.top,
+                            "background-color":"rgba(255,0,0,0.6)",
+                            "z-index":99999
+                        })                    
+                    options.HSL=HSL.appendTo(document.body);                                
+                }
+
                 $.data(this, "plugin_" + pluginName, new Plugin( this, options ));
             }else{
                 var tmpOptions = $.extend( {}, _plugin.options, options);

@@ -42,17 +42,30 @@
                 show:function(){
                     var topBarCellHeight=topBar.outerHeight(true);
                     $item
-                        .css("transform","translate3d(0,0,0)")
+                        .css({
+                            "transform":"translate3d(0,0,0)",
+                            "position":"static"
+                        })
                         .addClass("show")
                         .siblings(".cellItem")
                             .removeClass("show")
-                            .css("transform","translate3d(0,"+ topBarCellHeight +"px,0)")
+                            .css({
+                                "transform":"translate3d(0,"+ topBarCellHeight +"px,0)",
+                                "position":"absolute"
+                            })
+
+                    return this;
                 },
                 hide:function(){
                     var topBarCellHeight=topBar.outerHeight(true);
                     $item
-                        .css("transform","translate3d(0,"+ topBarCellHeight +"px,0)")
+                        .css({
+                            "transform":"translate3d(0,"+ topBarCellHeight +"px,0)",
+                            "position":"absolute"
+                        })
                         .removeClass("show")
+
+                    return this;
                 },
                 $el:$item           
             }

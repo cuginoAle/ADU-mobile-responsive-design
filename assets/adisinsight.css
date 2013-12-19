@@ -3924,6 +3924,30 @@ button#cboxClose {
 
 /*** Jump to section prototype ***/
 
+  /*media query helper (used to make JS aware of the current MQ)*/
+  #mqHelper{
+    position: absolute;
+    left:-9999px;
+    height: 0px;
+    width: 0px;
+  }
+  @media screen and (min-width: 600px) {
+    #mqHelper{
+      height: 1px;
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    #mqHelper{
+      height: 2px;
+    }
+  }
+
+
+.aduLogo{
+  width: 28px;
+  margin: 6px 0px 6px 15px;
+}
 .flatButton{
   outline: none;
 
@@ -4099,8 +4123,8 @@ button#cboxClose {
   -moz-transition: -moz-transform 0.25s ease-in-out 0.01s;
   -o-transition: -o-transform 0.25s ease-in-out 0.01s;
   transition: transform 0.25s ease-in-out 0.01s;
-  margin: 5px;
   white-space: nowrap;
+  position: absolute;
 }
 
 #topBar .cell_b{
@@ -4145,7 +4169,6 @@ button#cboxClose {
   font-size: 1.8rem;
   margin: 5px;
   min-height: 2.1rem;
-  position: absolute;
 }
 
 #topBar .documentTitle .title{
@@ -4185,7 +4208,9 @@ button#cboxClose {
   top:1px;
 }
 
-
+#topBar .tocLabel{
+  margin: 0px;
+}
 
 
 
@@ -4198,6 +4223,7 @@ button#cboxClose {
 #topBar .tocButton{
   background-color: #e5e5e5;
   background: url(springer-sprite.png) 0 -1099px no-repeat;
+  margin-right: 5px;
 }
 
 #navTreeClone{

@@ -2,24 +2,24 @@ $(window).load(function(){
     var $body=$(document.body)
     
     // headroom plugin initialisation
-    // $body.headroom({
-    //     offset:60,
-    //     tolerance:5,
-    //     classes:{
-    //         pinned:null,
-    //         unpinned:null
-    //     },
-    //     events:{
-    //         onPinned:function(){
-    //             $(this.elem).removeClass("headroom--unpinned")
-    //         },
-    //         onUnpinned:function(){
-    //             if(window.scrollY>600){
-    //                 $(this.elem).addClass("headroom--unpinned")
-    //             }
-    //         }
-    //     }
-    // });
+    $body.headroom({
+        offset:60,
+        tolerance:5,
+        classes:{
+            pinned:null,
+            unpinned:null
+        },
+        events:{
+            onPinned:function(){
+                $(this.elem).removeClass("headroom--unpinned")
+            },
+            onUnpinned:function(){
+                if(window.scrollY>600){
+                    $(this.elem).addClass("headroom--unpinned")
+                }
+            }
+        }
+    });
 });
 
 
@@ -39,6 +39,10 @@ $(window).load(function(){
             docTitle=$(".document__title");
       
         documentTitle.$el.find("span").text(docTitle.text())
+
+
+        // adding the logo image
+        var logo=topBarHandler.cells.a.addItem($('<img class="aduLogo" src="assets/Adu_logo.png" alt="Adu logo" title="Adu">')).show();
 
 
         // creating the TOC button
@@ -106,13 +110,11 @@ $(window).load(function(){
 
 
         // due to a known browser bug, resize event could fire more than once
-        var resizeHnd=null;
+        var resizeHnd=new deBouncer(100);
+
         $(window).on("resize",function(){
             // fixing the navigation height on window resise
-            if(resizeHnd){
-                clearTimeout(resizeHnd);
-            }
-            resizeHnd=setTimeout(fixNavHeight,100);
+            resizeHnd.execute(fixNavHeight);
         });
 
 
