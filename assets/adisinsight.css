@@ -4038,9 +4038,9 @@ button#cboxClose {
   /*left: 70px;  */
 }
 
-.showNavigation .main-header{
+/*.showNavigation .main-header{
   display: none;
-}
+}*/
 @media screen and (min-width: 600px) {
   .showNavigation{
     overflow: visible;
@@ -4049,9 +4049,9 @@ button#cboxClose {
     -webkit-transform:translate3d(0,0,0);
   }
 
-  .showNavigation .main-header{
+/*  .showNavigation .main-header{
     display: block;
-  }  
+  } */ 
 }
 
 

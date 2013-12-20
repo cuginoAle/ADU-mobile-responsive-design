@@ -154,13 +154,10 @@ $(window).load(function(){
                     //fixing the scroll-top issue (when sticky elements are employed in the page)
 
                     if(device=="mobile"){
-
-                        setTimeout(function(){
-                            if(targetTop>$(window).scrollTop()){
-                                targetTop=$(that.hash).offset().top
-                            }
-                            $("html,body").animate({"scrollTop":targetTop},500);
-                        },300)
+                        if(targetTop>$(window).scrollTop()){
+                            targetTop=$(that.hash).offset().top
+                        }
+                        $("html,body").animate({"scrollTop":targetTop},500);
                     }else{
                         $("html,body").animate({"scrollTop":targetTop},500);                        
                     }
