@@ -57,6 +57,14 @@ $(window).load(function(){
             $("html,body").animate({"scrollTop":0},800);
         })
 
+        // adding the left arrow to close the TOC on mobile
+        var closeToc=topBarHandler.cells.a.addItem($('<a class="closeToc" href="#"><img src="assets/left-arrow.png" alt="close toc" title="close Toc"/></a>'))
+        closeToc.$el.click(function(e){
+            e.preventDefault();
+            toggleTOC(false);
+        })
+
+
         // creating the TOC button
         var tocButton=topBarHandler.cells.c.addItem($('<button class="tocButton flatButton closed"><span>Table of contents</span></button>')),
             tocLabelText=$(".jump-to-section__nav-title").text();
@@ -231,9 +239,11 @@ $(window).load(function(){
         }
         if(tocLabel.$el.hasClass("show")){
             documentTitle.show();
+            logo.show();
         }else{
             if($body.getDevice()=="mobile"){
-                tocLabel.show();                
+                tocLabel.show(); 
+                closeToc.show();               
             }
         }
     }
