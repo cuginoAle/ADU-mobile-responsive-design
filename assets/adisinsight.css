@@ -431,7 +431,7 @@ h1 {
   font-size: 26px;
   font-size: 2.6rem;
   margin: 7px 0 14px; }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
   /* line 21, /var/lib/go-agent-4/pipelines/Build_WebApp/app/assets/sass/base/_base.scss */
   h1 {
     /* MQ Tablet */
@@ -3931,7 +3931,7 @@ button#cboxClose {
     height: 0px;
     width: 0px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 600px) {
     #mqHelper{
       height: 1px;
     }
@@ -4007,7 +4007,7 @@ button#cboxClose {
   }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
   .col-aside__section{
     display: block;
   }
@@ -4038,7 +4038,7 @@ button#cboxClose {
 .showNavigation .main-header{
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
   .showNavigation{
     overflow: visible;
   }
@@ -4148,7 +4148,7 @@ button#cboxClose {
   top:0px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
   .showNavigation #topBar{
     -webkit-transform:translate3d(0,0,0);
   }
@@ -4274,7 +4274,7 @@ button#cboxClose {
   text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
 
   #topBar .tocButton{
     box-shadow: none;
@@ -4346,7 +4346,7 @@ button#cboxClose {
   color:#666;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
   #document__TocLink{
     display: none;
   }
