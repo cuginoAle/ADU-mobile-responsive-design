@@ -1,4 +1,4 @@
-JumpToSection
+ADU
 =============
 
-<p>this is a prototype!</p>
+...a responsive document navigation prototype.
