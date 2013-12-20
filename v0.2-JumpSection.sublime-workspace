@@ -4,16 +4,128 @@
 		"selected_items":
 		[
 			[
+				"jump",
+				"jump-to-section__section-item"
+			],
+			[
+				"topb",
+				"topBarHandler"
+			],
+			[
+				"to",
+				"tocButton"
+			],
+			[
+				"top",
+				"topBar"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"get",
+				"getDevice"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"toggle",
+				"toggleTOC"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"add",
+				"addItem"
+			],
+			[
+				"de",
+				"deBouncer"
+			],
+			[
+				"scroo",
+				"scrollTop"
+			],
+			[
+				"tr",
+				"translate3d"
+			],
+			[
+				"show",
+				"showNavigation"
+			],
+			[
+				"hide",
+				"hideTOCbutton"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"tit",
+				"docTitle"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"tab",
+				"table-row"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"docume",
+				"documentTitle"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"non",
+				"none"
+			],
+			[
+				"navigation",
+				"navigationTree"
+			],
+			[
 				"navig",
 				"navigationTree"
 			],
 			[
 				"main",
 				"main-content"
-			],
-			[
-				"margin",
-				"margin-left"
 			],
 			[
 				"fix",
@@ -32,10 +144,6 @@
 				"position"
 			],
 			[
-				"te",
-				"text-indent"
-			],
-			[
 				"init",
 				"initialTime"
 			],
@@ -48,16 +156,8 @@
 				"border-bottom"
 			],
 			[
-				"docume",
-				"document__title"
-			],
-			[
 				"doc",
 				"document__title"
-			],
-			[
-				"get",
-				"getStatus"
 			],
 			[
 				"is",
@@ -116,10 +216,6 @@
 				"opacity"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
 				"padding",
 				"padding-bottom"
 			],
@@ -152,14 +248,6 @@
 				"text-decoration"
 			],
 			[
-				"bac",
-				"background-color"
-			],
-			[
-				"no",
-				"noParallax"
-			],
-			[
 				"inner",
 				"innerWidth"
 			],
@@ -186,10 +274,6 @@
 			[
 				"body",
 				"bodywWidth"
-			],
-			[
-				"padd",
-				"padding"
 			],
 			[
 				"box-s",
@@ -244,16 +328,8 @@
 				"max-width:   (property)"
 			],
 			[
-				"pa",
-				"parFxPos"
-			],
-			[
 				"box",
 				"box-sizing"
-			],
-			[
-				"toggle",
-				"toggleClass  (function)"
 			],
 			[
 				"tra",
@@ -270,10 +346,6 @@
 			[
 				"bor",
 				"border"
-			],
-			[
-				"min",
-				"min-width"
 			],
 			[
 				"overfl",
@@ -323,13 +395,127 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "assets/stickyNavigation.js",
+			"settings":
+			{
+				"buffer_size": 8431,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/topBarHandler.js",
+			"settings":
+			{
+				"buffer_size": 2491,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/headroom.js",
+			"settings":
+			{
+				"buffer_size": 6264,
+				"line_ending": "Unix",
+				"name": "/*!"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 54474,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/jquery.hotSpot.js",
+			"settings":
+			{
+				"buffer_size": 8882,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/debouncer.js",
+			"settings":
+			{
+				"buffer_size": 1094,
+				"line_ending": "Unix",
+				"name": "var deBouncer = function($,cf,of, interval){"
+			}
+		},
+		{
+			"file": "assets/mqHelper.js",
+			"settings":
+			{
+				"buffer_size": 751,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/adisinsight.css",
+			"settings":
+			{
+				"buffer_size": 172294,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 87.0,
 		"selected_items":
 		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"git",
+				"Git: Log Current File"
+			],
+			[
+				"GIT",
+				"Git: Diff Tool All"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"gist",
+				"Gist: Update File"
+			],
+			[
+				"stat",
+				"View: Toggle Status Bar"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
 			[
 				"in",
 				"Indentation: Reindent Lines"
@@ -340,7 +526,7 @@
 			],
 			[
 				"indent",
-				"Indentation: Reindent Lines"
+				"Indentation: Convert to Spaces"
 			],
 			[
 				"lint",
@@ -439,11 +625,11 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 575.0
+		"width": 449.0
 	},
 	"console":
 	{
-		"height": 125.0
+		"height": 368.0
 	},
 	"distraction_free":
 	{
@@ -456,6 +642,10 @@
 	},
 	"file_history":
 	[
+		"/Users/alessiocarnevale/casper/Jump_to_section_prototype(v.0.2)/assets/COMMIT_EDITMSG.COMMIT_EDITMSG",
+		"/Users/alessiocarnevale/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/alessiocarnevale/casper/Jump_to_section_prototype(v.0.2)/screenshot/Extended Search - ADU - mobile.JPG",
+		"/Users/alessiocarnevale/casper/Jump_to_section_prototype(v.0.2)/README.md",
 		"/Users/alessiocarnevale/casper/Jump to section prototype (v.0.2)/assets/jquery.hotSpotOld.js",
 		"/Users/alessiocarnevale/casper/Jump to section prototype (v.0.2)/assets/hammer.js",
 		"/Users/alessiocarnevale/casper/Jump to section prototype (v.0.2)/assets/requestAnimationFrame.js",
@@ -568,6 +758,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"/Users/alessiocarnevale/casper/Jump_to_section_prototype(v.0.2)/assets",
 			"",
 			"/Users/alessiocarnevale/casper/springersbm.github.io",
 			"",
@@ -615,6 +806,81 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"settime",
+			"0px",
+			"shownavig",
+			"global-nav",
+			"closeToc",
+			"e5e5e5",
+			"f0f0f0",
+			"0 1px 0 rgba(255, 255, 255, 0.75)",
+			"1200px)",
+			"showNavigation",
+			"doc.",
+			"doc",
+			"$body",
+			"var doc= $(\"html\");",
+			"$body",
+			"min-width: 600px",
+			"prevSize",
+			"helper",
+			"this",
+			"tocLabel",
+			"resize",
+			"fixNavHeight",
+			"scroll",
+			"debugmode",
+			"degubmode",
+			"@media",
+			"min-width",
+			"toggleTOC",
+			"sidenavigatio",
+			"transform",
+			"topBarHeight",
+			"slate3d",
+			"all",
+			"fixNavHeight",
+			"cellItem",
+			"showNavigation",
+			"navTreeClone",
+			"showNavigation",
+			"tocbutton.show",
+			"                    tocButton.hide();\n                    tocButton.$el.addClass(\"closed\");\n\n                    $body.removeClass(\"showNavigation\");",
+			"                    tocButton.hide();\n                    tocButton.$el.addClass(\"closed\");\n\n                    $body.removeClass(\"showNavigation\");  ",
+			"tocButton",
+			"tocLabel",
+			"toggleTOC",
+			"tocLabel",
+			"toggleTOC",
+			"tocButton",
+			"0.25",
+			"0.01s",
+			"all",
+			"toclabel",
+			"navigationTreeTitle",
+			"navigationTree",
+			"div",
+			"top:47px;",
+			"docTitle",
+			"docTitle\ndocTitle\ndocTitle",
+			"docTitleText",
+			"leave",
+			"topBarHeight",
+			"p",
+			"navigationTree button",
+			"topBar",
+			"topBarHeight",
+			"navigationTree",
+			"toggleTOC",
+			"docTitleText",
+			"topbar",
+			".show",
+			"TERA",
+			"headroom--unpinned",
+			"showNavi",
+			".documentSection h2",
+			"showNavigation",
+			"requestanimationframe",
 			"gone",
 			"enter",
 			"main-content",
@@ -667,82 +933,7 @@
 			"issticky",
 			"fixedsticky",
 			"scroll",
-			"topBar",
-			"topbar",
-			"introduction",
-			"lastFiredEvent",
-			"firstEventFired",
-			"lastFiredEvent",
-			"isHot",
-			"development sta",
-			"development overview",
-			"development_overview",
-			"navigationSection",
-			"section__head",
-			"navigationSection",
-			".document--drug-profile .section__heading",
-			" title='\"+people[x]+\"'",
-			"\"",
-			"imageFlipper",
-			"logo-print.jpg",
-			"logo-print",
-			"logo-print.jpg",
-			"setBG",
-			"-webkit-filter",
-			"blur",
-			"noParallax",
-			"board__headline",
-			"active",
-			"setBGposition",
-			"noparallax",
-			"setResponsiveImages",
-			"mobile",
-			"noParallax",
-			");",
-			"people.push(",
-			"line-he",
-			"aside",
-			"#0176c3",
-			"font-siz",
-			"our-workplace",
-			"dotte",
-			"font-si",
-			"map",
-			"our-products__product",
-			"display: none;",
-			"!important",
-			"base",
-			"print",
-			"base.min",
-			"blur",
-			"active",
-			";		",
-			"transition",
-			"-webkit-transition",
-			"tablet-portrait",
-			"ismobile",
-			"parallaxPanelRatio",
-			".storyboards__board",
-			"scriptHack",
-			"ismobile",
-			"noParallax",
-			"touch",
-			".data",
-			"\" data-mobileImg",
-			".jpg\" data-mobileImg",
-			"\" data-mobile",
-			"<noscript ",
-			"data-mobileImg=\"",
-			"data-tabletImg=\"ima",
-			"data-desktopImg=",
-			"_x2.jpg\"",
-			"data-retinaImg",
-			"imgObj",
-			"images",
-			"=\"img_",
-			"=\"IMG_",
-			"=\"img_",
-			"=\"IMG_"
+			"topBar"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -764,8 +955,957 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "assets/stickyNavigation.js",
+					"settings":
+					{
+						"buffer_size": 8431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4508,
+								4508
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2014.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/topBarHandler.js",
+					"settings":
+					{
+						"buffer_size": 2491,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1391,
+								1397
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 277.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/headroom.js",
+					"settings":
+					{
+						"buffer_size": 6264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5612,
+								5612
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": "/*!",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 54474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								758,
+								758
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/jquery.hotSpot.js",
+					"settings":
+					{
+						"buffer_size": 8882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1758,
+								1758
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 604.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/debouncer.js",
+					"settings":
+					{
+						"buffer_size": 1094,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								657,
+								657
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": "var deBouncer = function($,cf,of, interval){",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gist_description": "executes a funcion no more than every \"interval\" millisecs",
+							"gist_filename": "debouncer.js",
+							"gist_html_url": "https://gist.github.com/e8fa22082a4c5d988990",
+							"gist_url": "https://api.github.com/gists/e8fa22082a4c5d988990",
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/mqHelper.js",
+					"settings":
+					{
+						"buffer_size": 751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								696,
+								696
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "assets/adisinsight.css",
+					"settings":
+					{
+						"buffer_size": 172294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165767,
+								165711
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 60214.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -786,11 +1926,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.741118706598,
 			1.0
 		],
 		"rows":
@@ -802,7 +1949,7 @@
 	"menu_visible": true,
 	"output.git":
 	{
-		"height": 100.0
+		"height": 389.0
 	},
 	"replace":
 	{
@@ -924,7 +2071,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 276.0,
 	"status_bar_visible": true
 }
