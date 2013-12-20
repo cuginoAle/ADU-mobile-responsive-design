@@ -3944,10 +3944,12 @@ button#cboxClose {
   }
 
 
-.aduLogo{
+.aduLogo img{
   width: 28px;
   margin: 6px 0px 6px 15px;
+  display: block;
 }
+
 .flatButton{
   outline: none;
 

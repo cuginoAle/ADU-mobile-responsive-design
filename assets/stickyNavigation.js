@@ -50,8 +50,12 @@ $(window).load(function(){
 
 
         // adding the logo image
-        var logo=topBarHandler.cells.a.addItem($('<img class="aduLogo" src="assets/Adu_logo.png" alt="Adu logo" title="Adu">')).show();
-
+        var logo=topBarHandler.cells.a.addItem($('<a class="aduLogo" href="#"><img src="assets/Adu_logo.png" alt="Adu logo" title="Adu"/></a>')).show();
+        logo.$el.click(function(e){
+            // scrolling to on click
+            e.preventDefault();
+            $("html,body").animate({"scrollTop":0},800);
+        })
 
         // creating the TOC button
         var tocButton=topBarHandler.cells.c.addItem($('<button class="tocButton flatButton closed"><span>Table of contents</span></button>')),
@@ -125,14 +129,6 @@ $(window).load(function(){
             resizeHnd.execute(fixNavHeight);
         });
 
-
-
-
-        // //scroll-top button
-        // documentTitle.find("a").click(function(e){
-        //     e.preventDefault();
-        //     $("html,body").animate({"scrollTop":0},800);
-        // })
 
         // animating the scroll on menu click
         $("#sideNavigation").children("ul")
