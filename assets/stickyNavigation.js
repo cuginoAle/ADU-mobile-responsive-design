@@ -46,7 +46,7 @@ $(window).load(function(){
         var documentTitle=topBarHandler.cells.b.addItem($("<p class='documentTitle'><span/></p>")),
             docTitle=$(".document__title");
       
-        documentTitle.$el.find("span").text(docTitle.text())
+        documentTitle.$el.find("span").text(docTitle.text());
 
 
         // adding the logo image

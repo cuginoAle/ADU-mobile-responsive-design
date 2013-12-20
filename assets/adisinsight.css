@@ -4284,6 +4284,7 @@ button#cboxClose {
     border: none;
     background: url('http://link.springer.com/static/0.7298/images/sprites/springer-sprite-s723fd86243.png') 0px -3182px no-repeat;
     padding: 2px 0px 0px 17px;
+    margin-right: 111px;
 
     outline: none;
     font-size: 1.5rem;
